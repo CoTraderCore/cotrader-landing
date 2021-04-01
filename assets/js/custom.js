@@ -1,207 +1,50 @@
-
-// side menu css
-function toggleMenu(e) {
-    e.classList.toggle("active");
-    document.querySelector("aside").classList.toggle("active");
-   
-}
-
-// $('.toggle-wrap').click(){;
-//         $(this).find('i').toggleClass('fa-ellipsis-v fa-times');
-//     });
+// wow js
+// wow = new WOW(
+//     {
+//       animateClass: 'animated',
+//       offset: 100
+//     }
+//   );
+// wow.init();
 
 
-// slick slider js starts
-
-$('.interview_section ul').slick({
-    dots: false,
-    infinite: true,
-    arrows: true,
-    swipeToSlide: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    draggable: true,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    fade: true,
-    cssEase: 'linear',
-    // speed: 2500,
+// smooth navbar spy
+var $navbara = $('#navbar_id a');
+  
+$navbara.click(function(e){
+  //prevent the page from refreshing
+  e.preventDefault();
+  //set the top offset animation and speed
+  $('html, body').animate({
+    scrollTop: $($(this).attr('href')).offset().top
+},1000);
+  hash($(this).attr('href'));
 });
 
-// slick slider hero section js ends
 
-// playslist slider js
-$('.playlist_slider ul').slick({
-    dots: false,
-    infinite: false,
-    arrows:  true,
-    swipeToSlide: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    draggable: true,
-    autoplay: false,
-    autoplaySpeed: 1500,
-    variableWidth: false,
-    centerMode: false,
-    fade: false,
-    cssEase: 'linear',
-    responsive: [{
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 5,
-            }
+// swipe slider  js
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: false,
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
         },
-
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 4,
-            }
+        700: {
+          slidesPerView: 2,
+          spaceBetween: 20
         },
-
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3,
-            }
-        },
-        {
-            breakpoint: 500,
-            settings: {
-                slidesToShow: 2,
-            }
+        // when window width is >= 640px
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 30
         }
-    ]
-});
-
-// twitter slider js
-$('.twitter_slider ul').slick({
-    dots: false,
-    infinite: false,
-    arrows:  true,
-    swipeToSlide: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    draggable: true,
-    autoplay: false,
-    autoplaySpeed: 1500,
-    variableWidth: false,
-    centerMode: false,
-    fade: false,
-    cssEase: 'linear',
-    responsive: [{
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 2.5,
-            }
-        },
-
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 2,
-            }
-        },
-
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-            }
-        },
-        {
-            breakpoint: 500,
-            settings: {
-                slidesToShow: 1,
-            }
-        }
-    ]
-});
-
-// instagram slider
-
-$('.instagram_slider ul').slick({
-    dots: false,
-    infinite: false,
-    arrows:  false,
-    swipeToSlide: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    draggable: true,
-    autoplay: false,
-    autoplaySpeed: 1500,
-    variableWidth: false,
-    centerMode: false,
-    fade: false,
-    cssEase: 'linear',
-    responsive: [{
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 5,
-            }
-        },
-
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 4,
-            }
-        },
-
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3,
-            }
-        },
-        {
-            breakpoint: 500,
-            settings: {
-                slidesToShow: 2,
-            }
-        }
-    ]
-});
-
-
-
-
-
-
-// scroll top js
-var btn = $('#topbutton');
-
-$(window).scroll(function() {
-if ($(window).scrollTop() > 300) {
-btn.addClass('show');
-} else {
-btn.removeClass('show');
-}
-});
-
-btn.on('click', function(e) {
-e.preventDefault();
-$('html, body').animate({scrollTop:0}, '300');
-});
-
-// navbar collapse js
-$('.navbar-toggler').on('click', function() {
-    $('#collapsibleNavbar').show();
-    $("header.nav_wrapper .navbar").css({ 'mix-blend-mode' : 'unset'});
-
-    $('html, body').css({
-overflow: 'hidden',
-height: '100%',
-});
-});
-
-$('.close,  #kontakt_scrol').click(function() {
-
-// $('.overlay').hide();
-$('html, body').css({
-overflow: 'auto',
-height: 'auto'
-});
-$('#collapsibleNavbar').hide();
-$("header.nav_wrapper .navbar").css({ 'mix-blend-mode' : 'multiply'});
-});
+      }
+  });

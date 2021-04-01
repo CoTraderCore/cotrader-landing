@@ -52,11 +52,11 @@ body {
   line-height: 1;
   letter-spacing: normal;
   margin: 0;
-  // overflow-y: auto;
   width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
   background-image: linear-gradient(-130deg, #1d2435, #171a2a);
+  scroll-behavior: smooth;
 }
 
 
@@ -416,8 +416,8 @@ svg:not(:root).svg-inline--fa {
 }
 
 .section_my {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  padding-top: 150px;
+  // padding-bottom: 150px;
 
 }
 
@@ -611,13 +611,13 @@ svg:not(:root).svg-inline--fa {
 
 
       .milestone_box {
-        // position: absolute;
         background-image: linear-gradient(-129deg, rgb(29, 36, 53) 0%, rgb(23, 26, 42) 100%);
         border-radius: 19.19px;
         box-shadow: rgba(50, 59, 147, 56%) 0px 6px 12px 0px;
         padding: 52px 36px;
-        // width: 364px;
         z-index: 1;
+        transform: scale(.8);
+        opacity: 0.85;
 
         h3.msDate {
           font-size: 41px;
@@ -771,19 +771,66 @@ svg:not(:root).svg-inline--fa {
     height: 48px;
     border-style: none;
     cursor: pointer;
-
+    .svg-inline--fa {
+      vertical-align: -0.25rem;
+    }
 
 }   
 
 
 }
 
+.show_icon{
+  display: none;
+}
+.hide_icon{
+  display: none;
+}
+.question_box .questioncollapse[aria-expanded="true"] .show_icon{
+  display: block;
+}
+.question_box .questioncollapse[aria-expanded="false"] .hide_icon{
+  display: block;
+}
+.milestone_list_wrapper .swiper-slide-active .milestone_box {
+  transform: scale(1) !important;
+  opacity: 1 !important;
+
+}
+
+// team section
+.team_section{
+  padding-bottom: 100px;
+
+  .team_list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+
+    .member_box{
+      width: 170px;
+      margin-bottom: 2rem;
+      img{
+        padding: 0px 15px;
+        margin-bottom: .75rem;
+      }
+
+      p{
+        opacity: 1;
+        font-size: 17px;
+        text-align: center;
+        margin-bottom: 0px;
+        line-height: 1.5;
+      }
+
+    }
 
 
+  }
 
 
-
-
+}
 
 
 
@@ -792,408 +839,85 @@ svg:not(:root).svg-inline--fa {
 /*// Large devices (desktops, less than 1200px)*/
 @media (max-width: 1199.98px) {
 
-  .contact_page #hero_section {
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100%;
-    background-image: url(../images/hero_bg3.svg);
-    min-height: auto;
-  }
-
-  .main_body.contact_page {
-    background: #000000e8;
-  }
-
-  .contact_section {
-    width: 100%;
-    min-height: auto;
-  }
-
-  // home page css
-
-  .youtube_section .subscribe_box {
-    max-width: 565px;
-  }
-
-  .youtube_section .latest_music {
-    max-width: 330px;
-  }
-
-  .latest_blog_wrapper .latest_blogs {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .latest_blog_wrapper .primary_blog {
-    max-width: 100%;
-    max-height: 100%;
-    margin-bottom: 2rem;
-  }
-
-  // livestream_page css
-  .livestream_page #hero_section .youtube_section .subscribe_box {
-    max-width: 100%;
-  }
-
-  .playlist_slider .slick-prev,
-  .twitter_slider .slick-prev {
-    left: -25px;
-  }
-
-  .playlist_slider .slick-next,
-  .twitter_slider .slick-next {
-    right: -25px;
-  }
-
-  .news_bottom_bg .send_question_wrapper h1 {
-    font-size: 48px;
-    line-height: 58px;
-  }
-
+ 
 
 }
 
 /*// Medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) {
-
-  .contact_section {
-    padding: 40px 30px;
-  }
-
-  .social_section .social_link_wrapper {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .socialPlaterom {
-    margin: 0rem 1rem 1rem;
-  }
-
-  #footer_wrapper .footer_nav .list-group-horizontal,
-  #footer_wrapper .social_links .list-group-horizontal {
-    justify-content: center;
-  }
-
-  .contact_section {
-    margin: 66px auto 20px;
-  }
-
-  // home page css
-  .youtube_section {
-    padding-top: 40px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .youtube_section .subscribe_box {
-    max-width: 730px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-
-  .youtube_section .latest_music {
-    max-width: 100%;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-  }
-
-  .tweets_wrapper .twitter_slider {
-    margin-bottom: 0rem;
-  }
-
-  .social_section .social_link_wrapper {
-    margin: 30px 0px 0px;
-  }
-
-  .livestream_page #hero_section .youtube_section .subscribe_box {
+  #main_navbar {
     height: auto;
+    padding: 15px 0px;
   }
-
-  // release page
-  .all_releases .released_music_wrapper {
-    justify-content: space-around;
+  .main_body{
+    overflow-x: hidden;
   }
-
-  .getStarted_wrapper {
-    padding-bottom: 0px;
+  h1.title_format {
+    font-size: 50px;
+    margin-bottom: 14px;}
+    .funding_section .funding_img {
+      max-width: 100%;
   }
-
-  .news_page #hero_section .hero_content {
-    margin-top: 90px;
-    margin-bottom: 90px;
+  .expansion_section .expansion_Mwrapper .milestone_list_wrapper .milestone_box {
+    padding: 52px 30px;}
+  
+    #main_navbar .container{
+      padding: 0px;
+    }
+    #main_navbar .navbar-expand-md .navbar-nav .nav-link {
+      padding-right: .5rem;
+      padding-left: .5rem;
+      font-size: 12px !important;
   }
+  #main_navbar .navbar{
+    padding: .5rem 0rem;
+  }   
 
-  .news_page #hero_section {
-    min-height: auto;
-  }
-
-  .getStarted_wrapper {
-    min-height: auto;
-  }
-
-  .getStarted_wrapper .getStarted_content {
-    margin-top: 80px;
-  }
-
-  .question_section {
-    padding-top: 4rem;
-  }
-
-  .news_bottom_bg .send_question_wrapper .btn_send_question {
-    margin-top: 2rem;
-  }
-
+ 
 }
 
+@media (max-width: 767.98px) {
+  .collapse:not(.show) {
+    display: none !important;
+  }
+
+  #main_navbar .container{
+    padding: 0px 20px;
+  }
+  #main_navbar .navbar-expand-md .navbar-nav .nav-link {
+    font-size: 13px !important;
+    text-align: center;
+}
+#main_navbar .navbar-toggler {
+  padding: 0rem;
+  border: unset;
+}
+  
+
+
+}
 
 
 
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-
-  .contact_section {
-    padding: 30px 20px;
-    margin-bottom: 2rem;
-    margin-top: 0px;
-  }
-
-  .contact_section .form_wrapper {
-    margin-top: 2rem;
-  }
-
-  #footer_wrapper .list-group-horizontal {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  // home page css
-  .social_section.available_section .available_companies .company_logo {
-    margin-bottom: 1rem;
-  }
-
-  .social_section.available_section .available_companies .company_logo {
-    display: flex;
-    justify-content: center;
-  }
-
-  .social_section.available_section .available_companies .company_logo.company_logo2:after {
-    content: unset;
-  }
-
-
-  // new css
-  .latest_blog_wrapper .secondry_blogs .blog_card {
-    width: 100%;
-    height: auto;
-  }
-
-  .latest_blog_wrapper .secondry_blogs .blog_card .secondry_blog_content {
-    padding: 0rem .5rem;
-    max-width: 60%;
-  }
-
-  .latest_blog_wrapper .secondry_blogs .blog_card .secondry_blog_content h4.card-title {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  // new css
-
-  .youtube_section .subscribe_box .card .card-img-overlay {
-    padding: 1rem;
-  }
-
-  .youtube_section .subscribe_box {
-    max-width: 730px;
-    height: 250px;
-  }
-
-  .youtube_section .subscribe_box .card .card-img-overlay h4.card-title {
-    font-size: 23px;
-  }
-
-  .youtube_section .subscribe_box .card .card-img-top {
-    border-radius: 0px;
-  }
-
-  .youtube_section .latest_music {
-    padding: 16px 0px 10px 23px;
-  }
-
-
-
-  .latest_blog_wrapper .blog_card h4.card-title {
-    font-size: 24px;
-    line-height: 30px;
-  }
-
-  .interview_card .card-img-overlay {
-    padding: .5rem;
-  }
-
-  .interview_section .interview_card h4.card-title {
-    font-size: 16px;
-    line-height: 16px;
-    margin-bottom: .5rem;
-  }
-
-  .interview_section .interview_card h5 {
-    font-size: 14px;
-    line-height: 14px;
-    margin-bottom: .5rem;
-  }
-
-  .interview_section .interview_card p {
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-  .interview_section {
-    margin: 0rem 0rem;
-  }
-
-  .playlist_wrapper {
-    padding: 1rem 0rem 1.5rem;
-  }
-
-  .instagram_section {
-    padding-top: 40px;
-  }
-
-  #hero_section .custom_nav {
-    padding: 30px 0rem;
-  }
-
-  // release page
-  .main_realease {
-    flex-direction: column;
-    margin-top: 40px;
-
-  }
-
-  .main_realease .main_thumbnail img {
-    margin-right: auto;
-    margin-bottom: 1rem;
-  }
-
-  .all_releases {
-    margin-top: 0px;
-  }
-
-  .slick-next,
-  .slick-prev {
-    width: 25px;
-    height: 25px;
-  }
-
-  .slick-next:before,
-  .slick-prev:before {
-    font-size: 10px;
-  }
-
-  .slick-prev {
-    left: -10px;
-  }
-
-  .slick-next {
-    right: -10px;
-  }
-
-  .playlist_slider .slick-prev,
-  .twitter_slider .slick-prev {
-    left: 0px;
-  }
-
-  .playlist_slider .slick-next,
-  .twitter_slider .slick-next {
-    right: 0px;
-  }
-
-  .news_page #hero_section .hero_content h1.h_title {
-    font-size: 36px;
-    line-height: 44px;
-  }
-
-  .getStarted_wrapper .promise_title {
-    font-size: 36px;
-    line-height: 44px;
-    margin-bottom: 3rem;
-  }
-
-  .news_page #hero_section .hero_content {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding-bottom: 40px;
-  }
-
-  .news_page #hero_section .main_logo {
-    text-align: center;
-    padding: 40px 0px 22px;
-  }
-
-  .getStarted_wrapper .promises p {
-    margin-bottom: 2rem;
-  }
-
-  .getStarted_wrapper .getStarted_content {
-    margin-top: 15px;
-  }
-
-  .getStarted_wrapper .getStarted_content .youtube_section .latest_music {
-    margin-bottom: 2rem;
-  }
-
-  .question_section h1.faq_title {
-    font-size: 30px;
-    line-height: 40px;
-    margin-bottom: 2rem;
-  }
-
-  .news_bottom_bg .send_question_wrapper h1 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-
-  .news_bottom_bg .send_question_wrapper {
-    padding: 4rem 0rem;
-  }
-
-  .interview_section .interview_card .card-img-top {
-    height: 200px;
-  }
-
-  .social_section .social_link_wrapper {
-    margin: 30px auto 0px;
-    max-width: 180px;
-    justify-content: flex-start;
-  }
-
-  .socialPlaterom {
-    margin: 0rem 0rem 1.5rem;
-
-  }
-
-  .home_page #hero_section {
-    background-image: url("../images/Banner1_M.jpg");
-  }
-
-  .livestream_page #hero_section {
-    background-image: url("../images/Banner2_M.jpg");
-  }
-
-  .release_page #hero_section {
-    background-image: url("../images/Banner3_M.jpg");
-  }
-
-  .news_page #hero_section {
-    background-image: url("../images/Banner4_M.jpg");
-  }
+  .section_my {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.mx_xs_auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+.token_section .token_distribution_box {
+  margin-bottom: 2rem;
+}
+.expansion_section .expansion_Mwrapper .milestone_list_wrapper {
+  margin: 40px 0px;
+}
 
 }
 
-@media (max-width: 375.98px) {
-  .latest_blog_wrapper .secondry_blogs .blog_card .secondry_blog_content {
-    max-width: 56%;
-  }
+// @media (max-width: 375.98px) {
 
-}
+// }

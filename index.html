@@ -10,11 +10,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <!-- slick -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
-
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap"
@@ -22,23 +17,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- custom css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
-
-    <style>
-
-
-
-    </style>
+    <link rel="stylesheet" href="assets/css/wow.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="position: relative;">
 
     <div class="main_body">
 
         <!-- navbar starts -->
         <header id="main_navbar" class="fixed-top">
             <div class="container h-100">
-                <nav class="navbar navbar-expand-sm  navbar-dark h-100 my-auto">
+                <nav  class="navbar navbar-expand-md  navbar-dark h-100 my-auto">
                     <!-- Brand -->
                     <a class="navbar-brand" href="#"><img src="assets/images//cotrader_logo.png"
                             alt="cotrader_logo.png">
@@ -47,26 +39,27 @@
                     <!-- Toggler/collapsibe Button -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <svg class="svg-inline--fa fa-bars fa-w-14" style="color: rgb(255, 255, 255);" aria-hidden="true" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
                     </button>
 
                     <!-- Navbar links -->
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="navbar-nav mx-auto">
+                        <ul id="navbar_id" class="navbar-nav mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Platform</a>
+                                <a class="nav-link n-link" href="#platform">Platform</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Token</a>
+                                <a class="nav-link n-link" href="#token">Token</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Roadmap</a>
+                                <a class="nav-link" href="#roadmap">Roadmap</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">LM & LGE</a>
+                                <a class="nav-link" href="#LM">LM & LGE</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">FAQ</a>
+                                <a class="nav-link" href="#faq">FAQ</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav">
@@ -74,7 +67,7 @@
                                 <a class="nav-link" href="#">Whitepaper</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Old Ethereum Funds</a>
+                                <a class="nav-link" href="https://eth.cotrader.com/#/web3off/">Old Ethereum Funds</a>
                             </li>
                         </ul>
                     </div>
@@ -84,12 +77,12 @@
         <!-- navbar ends -->
 
         <!-- hero section starts -->
-        <section id="hero_section">
+        <section id="hero_section" class="section_my">
             <div class="container-fluid">
 
                 <div class="row justify-content-end">
-                    <div class="col-md-5 my-auto">
-                        <div class="hero_content">
+                    <div class="col-lg-5 col-md-6 my-auto">
+                        <div class="hero_content wow bounceInDown">
                             <h1 class="title_format">CoTrader</h1>
                             <h2 class="subtitle">
                                 DeFi the $85 trillion global investment funds industry
@@ -103,25 +96,25 @@
                     </div>
 
                     <div class="col-lg-7 col-md-6 my-auto">
-                        <div class="">
+                        <div class=" animate">
                             <div class="HeroImage__HeroImageWrapper-dvdknE jSJYb" id="hero-scene"
                                 style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
                                 <div data-depth="0.3"
                                     style="position: relative; width: 100%; height: 100%; z-index: 5; transform: translate3d(1.1px, -15.7px, 0px); transform-style: preserve-3d; backface-visibility: hidden; display: block; left: 0px; top: 0px;">
                                     <img src="assets/images/hero-image-dark-1.55f26bb0.png"
-                                        style="width: 45%; position: absolute; right: 5%;"></div>
+                                        style="width: 45%; position: absolute; right: 5%;" class="wow fadeInRight"></div>
                                 <div data-depth="0.2"
                                     style="position: absolute; width: 100%; height: 100%; z-index: 4; transform: translate3d(0.7px, -10.5px, 0px); transform-style: preserve-3d; backface-visibility: hidden; display: block; left: 0px; top: 0px;">
                                     <img src="assets/images/hero-image-dark-2.4f1c5c51.png"
-                                        style="width: 55%; position: absolute; left: 2%;"></div>
+                                        style="width: 55%; position: absolute; left: 2%;" class="wow fadeInLeft"></div>
                                 <div data-depth="0.1"
                                     style="position: absolute; width: 100%; height: 100%; z-index: 2; transform: translate3d(0.4px, -5.2px, 0px); transform-style: preserve-3d; backface-visibility: hidden; display: block; left: 0px; top: 0px;">
                                     <img src="assets/images/hero-image-dark-3.9fb5edcc.png"
-                                        style="width: 86%; position: absolute; right: 0px; bottom: 0px;"></div>
+                                        style="width: 86%; position: absolute; right: 0px; bottom: 0px;" class="wow fadeInUp"></div>
                                 <div
                                     style="position: absolute; width: 100%; height: 100%; z-index: 3; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; display: block; left: 0px; top: 0px;">
                                     <img src="assets/images/hero-image-dark-4.4a1f333f.png"
-                                        style="width: 82%; position: absolute; left: 11%; bottom: 30%;"></div>
+                                        style="width: 82%; position: absolute; left: 11%; bottom: 30%;" class="wow shake"></div>
                             </div>
                         </div>
                     </div>
@@ -131,13 +124,13 @@
         <!-- hero section ends -->
 
         <!-- social links starts -->
-        <section class="social_links">
+        <section class="social_links ">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row wow fadeInLeft">
                     <div class="d-none d-sm-block col-sm-2" style="padding-left: 0px;">
                         <div class="SocialRow__Line-gQyYPl eXXnTy"></div>
                     </div>
-                    <div class="SocialRow__SocialCol-ixzvoG bAJqdH col">
+                    <div class="SocialRow__SocialCol-ixzvoG bAJqdH col ">
                         <span class="SocialRow__SocialLabel-iMphGc xXDTb">SOCIAL :</span>
                         <span>
                             <a href="https://twitter.com/cotrader_com" target="_blank">
@@ -231,18 +224,19 @@
         <!-- social links ends -->
 
         <!-- video section starts -->
-        <section class="video_section section_my">
+        <section id="platform" class="video_section section_my">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6  order-md-1">
-                        <img src="assets/images/vta23.aba3bf4c.png" alt="vta23.aba3bf4c.png" class="video_thumbnail">
+                    <div class="col-md-6  order-md-1 wow fadeInLeft">
+                        <img src="assets/images/vta23.aba3bf4c.png" alt="vta23.aba3bf4c.png"
+                            class="video_thumbnail mb-md-0 mb-4 ">
                     </div>
 
                     <div class="col-md-6 order-md-2 my-md-auto">
                         <div class="video_content">
-                            <h3>What is ?</h3>
-                            <h1 class="title_format">CoTrader</h1>
-                            <p>Fully onchain funds platform connecting swap DEXs & DeFi dapps. Investor can withdraw
+                            <h3 class="wow fadeInDown">What is ?</h3>
+                            <h1 class="title_format wow fadeInRight">CoTrader</h1>
+                            <p class="wow fadeInUp">Fully onchain funds platform connecting swap DEXs & DeFi dapps. Investor can withdraw
                                 assets anytime, with security, privacy, and cryptographically proven ROI</p>
                         </div>
                     </div>
@@ -253,19 +247,19 @@
         <!-- video section ends -->
 
         <!-- funding section starts -->
-        <section class="funding_section">
+        <section class="funding_section section_my">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6  order-md-2 text-md-right text-center">
                         <img src="assets/images/introducing-image.fca766ad.png" alt="introducing-image.fca766ad.png"
-                            class="funding_img">
+                            class="funding_img wow bounceIn">
                     </div>
 
                     <div class="col-md-6 order-md-1 my-md-auto">
                         <div class="funding_content">
-                            <h3>Introducing</h3>
-                            <h1 class="title_format">Smart Funds</h1>
-                            <p>Smart funds enable traders to prove their ROI and trade assets on behalf of investor,
+                            <h3 class="wow fadeInUp">Introducing</h3>
+                            <h1 class="title_format wow fadeInRight">Smart Funds</h1>
+                            <p class="wow fadeInLeft">Smart funds enable traders to prove their ROI and trade assets on behalf of investor,
                                 while ensuring that only investors who deposit funds can withdraw them</p>
                         </div>
                     </div>
@@ -276,16 +270,16 @@
         <!-- funding section ends -->
 
         <!-- Lm section starts -->
-        <section class="lm_section section_my">
+        <section id="LM" class="lm_section section_my">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-md-6  order-md-1">
                         <img src="assets/images/security-and-privacy-image.942434ac.png"
-                            alt="security-and-privacy-image.942434ac.png">
+                            alt="security-and-privacy-image.942434ac.png" class="wow shake">
                     </div>
 
                     <div class="col-md-6 order-md-2 my-md-auto offset-lg-1">
-                        <div class="lm_content">
+                        <div class="lm_content wow bounceInDown">
                             <h2 class="subtitle">
                                 LM, LGE, burn, no team tokens & market protection
                             </h2>
@@ -308,7 +302,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6  order-md-2 text-md-right text-center offset-md-1">
-                        <div class="token_distribution_box">
+                        <div class="token_distribution_box wow fadeInRight">
                             <div class="row">
                                 <div class="col-md-6 offset-md-1">
                                     <h2 class="subtitle">
@@ -318,13 +312,13 @@
                                         alt="token-chart-dark.552b3649.png" class="mb-3">
                                 </div>
 
-                                <div class="col-md-5 my-md-auto">
+                                <div class="col-md-5 my-md-auto col-6 mx_xs_auto">
                                     <div class="value_percentage">
-                                        <h6 class="pl-2">50%</h6>
+                                        <h6 class="pl-md-2">50%</h6>
                                         <p>TGE</p>
                                     </div>
                                     <div class="value_percentage">
-                                        <h6 class="pl-2">50%</h6>
+                                        <h6 class="pl-md-2">50%</h6>
                                         <p>Liquidity Mining (LM)</p>
                                     </div>
                                 </div>
@@ -335,10 +329,10 @@
 
                     <div class="col-md-5 order-md-1 my-md-auto">
                         <div class="token_content text-right">
-                            <h3 class="">CoTrader MultiChain</h3>
-                            <h1 class="title_format">Token</h1>
+                            <h3 class="wow fadeInLeft">CoTrader MultiChain</h3>
+                            <h1 class="title_format wow fadeInLeft">Token</h1>
 
-                            <div class="token_supply">
+                            <div class="token_supply wow fadeInDown">
                                 <div class="max_supply">
                                     <p>ER20 Max Supply</p>
                                     <p class="value">20B</p>
@@ -358,7 +352,7 @@
         <!-- token section ends -->
 
         <!-- expansion section starts -->
-        <section class="expansion_section section_my">
+        <section id="roadmap" class="expansion_section section_my">
             <div class="expansion_Mwrapper">
                 <div class="SpecialBackground__BackgroundLayer2-bNDdPP gUYHGJ"></div>
                 <div class="SpecialBackground__BackgroundLayer1-iNxCaX eOrdTi"></div>
@@ -366,46 +360,48 @@
                 <div class="SpecialBackground__Background-bHidwA kRBKwm">
                     <div class="container">
                         <div>
-                            <div class="roadmap_text ">Roadmap</div>
+                            <div class="roadmap_text wow fadeInDown">Roadmap</div>
                         </div>
-                        <div class="milestone_list_wrapper">
-                            <ul class="MilestoneList">
-                                <!-- first milestone -->
-                                <li>
-                                    <div class="milestone_box">
-                                        <h3 class="msDate">April, 2021</h3>
-                                        <p>BSC Expansion & LM</p>
+                        <div class="milestone_list_wrapper ">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper ">
+                                    <div class="swiper-slide">
+                                        <div class="milestone_box">
+                                            <h3 class="msDate">April, 2021</h3>
+                                            <p>BSC Expansion & LM</p>
+                                        </div>
                                     </div>
-                                </li>
-                                <!-- second milestone  -->
-                                <li>
-                                    <div class="milestone_box">
-                                        <h3 class="msDate">May, 2021</h3>
-                                        <p>Support more DEXs</p>
+                                    <!-- second milestone  -->
+                                    <div class="swiper-slide">
+                                        <div class="milestone_box">
+                                            <h3 class="msDate">May, 2021</h3>
+                                            <p>Support more DEXs</p>
+                                        </div>
                                     </div>
-                                </li>
-                                <!-- third milestone -->
-                                <li>
-                                    <div class="milestone_box">
-                                        <h3 class="msDate">June, 2021</h3>
-                                        <p>BSC Expansion & LM</p>
+                                    <!-- third milestone -->
+                                    <div class="swiper-slide">
+                                        <div class="milestone_box">
+                                            <h3 class="msDate">June, 2021</h3>
+                                            <p>BSC Expansion & LM</p>
+                                        </div>
                                     </div>
-                                </li>
-                                <!-- 4th milestone  -->
-                                <li>
-                                    <div class="milestone_box">
-                                        <h3 class="msDate">July, 2021</h3>
-                                        <p>Support more DEXs</p>
+                                    <!-- 4th milestone  -->
+                                    <div class="swiper-slide">
+                                        <div class="milestone_box">
+                                            <h3 class="msDate">July, 2021</h3>
+                                            <p>Support more DEXs</p>
+                                        </div>
                                     </div>
-                                </li>
-                                <!-- fifth milestone -->
-                                <li>
-                                    <div class="milestone_box">
-                                        <h3 class="msDate">August, 2021</h3>
-                                        <p>BSC Expansion & LM</p>
+                                    <!-- fifth milestone -->
+                                    <div class="swiper-slide">
+                                        <div class="milestone_box">
+                                            <h3 class="msDate">August, 2021</h3>
+                                            <p>BSC Expansion & LM</p>
+                                        </div>
                                     </div>
-                                </li>
-                            </ul>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <img class="SpecialBackgroundLayer1__SpecialBackgroundLayer-eVskci iNrByr"
@@ -430,9 +426,9 @@
                         </div>
 
                         <div class="mission_content">
-                            <h1 class="title_format">
+                            <h1 class="title_format wow fadeInDown">
                                 Our Mission</h1>
-                            <p>
+                            <p class="wow fadeInLeft">
                                 Our goal is to help people realize greater financial freedom by maximizing investment
                                 returns in minimal time. We connect investors from both sides of the expertise spectrum
                                 for
@@ -448,18 +444,21 @@
         <!-- mission section ends -->
 
         <!-- faq section starts -->
-        <section class="faq_section section_my">
+        <section id="faq" class="faq_section section_my">
             <div class="container">
                 <div class="row">
                     <div class="col-12 order-2 col-lg-6 order-lg-1">
-                        <div id="faqAccordion">
+                        <div id="faqAccordion" >
 
 
-                            <div class="question_box">
+                            <div class="question_box wow fadeInLeft">
                                 <div class="row">
-                                    <div class="col-2" data-toggle="collapse" data-target="#q1"><img
-                                            src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii4zMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+PHJlY3QgaGVpZ2h0PSIzMyIgcng9IjE2LjUiIHN0cm9rZT0iI2FlYWVhZSIgd2lkdGg9IjMzIiB4PSItLjUiIHk9Ii0uNSIvPjxwYXRoIGQ9Im0xOC4xNDAwNDc1IDE5LjYzMjQwMzQtMi42ODkwNzU2LTIuNjg1OTUwOWMtLjIwMTY4MDctLjIwMTQ0NjMtLjYwNTA0Mi0uMDY3MTQ4OC0uNjA1MDQyLjI2ODU5NTF2LjY3MTQ4NzdjMCAuNDAyODkyNy0uMjY4OTA3Ni42NzE0ODc4LS42NzIyNjg5LjY3MTQ4NzhoLTEuMzQ0NTM3OGMtLjQwMzM2MTQgMC0uNjcyMjY5LS4yNjg1OTUxLS42NzIyNjktLjY3MTQ4Nzh2LTUuMzcxOTAxOGMwLS40MDI4OTI3LjI2ODkwNzYtLjY3MTQ4NzcuNjcyMjY5LS42NzE0ODc3aDUuMzc4MTUxMmMuNDAzMzYxNCAwIC42NzIyNjg5LjI2ODU5NS42NzIyNjg5LjY3MTQ4Nzd2MS4zNDI5NzU0YzAgLjQwMjg5MjctLjI2ODkwNzUuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0uNjcyMjY4OWMtLjI2ODkwNzYgMC0uNDcwNTg4Mi4zMzU3NDM4LS4yNjg5MDc2LjYwNDMzODlsMi42ODkwNzU3IDIuNjg1OTUxYy4yNjg5MDc1LjI2ODU5NTEuMjY4OTA3NS42NzE0ODc3IDAgLjk0MDA4MjhsLS45NDExNzY1Ljk0MDA4MjhjLS4yMDE2ODA3LjIwMTQ0NjMtLjYwNTA0Mi4yMDE0NDYzLS44NzM5NDk2LS4wNjcxNDg4eiIgZmlsbD0iI2FlYWVhZSIgdHJhbnNmb3JtPSJtYXRyaXgoLjcwNzEwNjc4IC43MDcxMDY3OCAtLjcwNzEwNjc4IC43MDcxMDY3OCAxNS45MzUwMjkgLTYuNzg0MjcxKSIvPjwvZz48L3N2Zz4="
-                                            width="32px" style="margin-bottom: 0px;">
+                                    <div class="col-2 questioncollapse" data-toggle="collapse" data-target="#q1"
+                                        aria-expanded="true">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii4zMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+PHJlY3QgaGVpZ2h0PSIzMyIgcng9IjE2LjUiIHN0cm9rZT0iI2FlYWVhZSIgd2lkdGg9IjMzIiB4PSItLjUiIHk9Ii0uNSIvPjxwYXRoIGQ9Im0xOC4xNDAwNDc1IDE5LjYzMjQwMzQtMi42ODkwNzU2LTIuNjg1OTUwOWMtLjIwMTY4MDctLjIwMTQ0NjMtLjYwNTA0Mi0uMDY3MTQ4OC0uNjA1MDQyLjI2ODU5NTF2LjY3MTQ4NzdjMCAuNDAyODkyNy0uMjY4OTA3Ni42NzE0ODc4LS42NzIyNjg5LjY3MTQ4NzhoLTEuMzQ0NTM3OGMtLjQwMzM2MTQgMC0uNjcyMjY5LS4yNjg1OTUxLS42NzIyNjktLjY3MTQ4Nzh2LTUuMzcxOTAxOGMwLS40MDI4OTI3LjI2ODkwNzYtLjY3MTQ4NzcuNjcyMjY5LS42NzE0ODc3aDUuMzc4MTUxMmMuNDAzMzYxNCAwIC42NzIyNjg5LjI2ODU5NS42NzIyNjg5LjY3MTQ4Nzd2MS4zNDI5NzU0YzAgLjQwMjg5MjctLjI2ODkwNzUuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0uNjcyMjY4OWMtLjI2ODkwNzYgMC0uNDcwNTg4Mi4zMzU3NDM4LS4yNjg5MDc2LjYwNDMzODlsMi42ODkwNzU3IDIuNjg1OTUxYy4yNjg5MDc1LjI2ODU5NTEuMjY4OTA3NS42NzE0ODc3IDAgLjk0MDA4MjhsLS45NDExNzY1Ljk0MDA4MjhjLS4yMDE2ODA3LjIwMTQ0NjMtLjYwNTA0Mi4yMDE0NDYzLS44NzM5NDk2LS4wNjcxNDg4eiIgZmlsbD0iI2FlYWVhZSIgdHJhbnNmb3JtPSJtYXRyaXgoLjcwNzEwNjc4IC43MDcxMDY3OCAtLjcwNzEwNjc4IC43MDcxMDY3OCAxNS45MzUwMjkgLTYuNzg0MjcxKSIvPjwvZz48L3N2Zz4="
+                                            width="32px" style="margin-bottom: 0px;" class="show_icon">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMzUuMzc2MzElIiB4Mj0iOTYuMDQ2JSIgeTE9IjEuNTM4NDc4JSIgeTI9IjY1LjI2NDQ2OCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwZmZiNiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwZGNmZiIvPjwvbGluZWFyR3JhZGllbnQ+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAxIDMzKSI+PHJlY3QgaGVpZ2h0PSIzMyIgb3BhY2l0eT0iLjYiIHJ4PSIxNi41IiBzdHJva2U9InVybCgjYSkiIHdpZHRoPSIzMyIgeD0iLS41IiB5PSItLjUiLz48cGF0aCBkPSJtMTguMTQwMDQ3NSAxOS42MzI0MDM0LTIuNjg5MDc1Ni0yLjY4NTk1MDljLS4yMDE2ODA3LS4yMDE0NDYzLS42MDUwNDItLjA2NzE0ODgtLjYwNTA0Mi4yNjg1OTUxdi42NzE0ODc3YzAgLjQwMjg5MjctLjI2ODkwNzYuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0xLjM0NDUzNzhjLS40MDMzNjE0IDAtLjY3MjI2OS0uMjY4NTk1MS0uNjcyMjY5LS42NzE0ODc4di01LjM3MTkwMThjMC0uNDAyODkyNy4yNjg5MDc2LS42NzE0ODc3LjY3MjI2OS0uNjcxNDg3N2g1LjM3ODE1MTJjLjQwMzM2MTQgMCAuNjcyMjY4OS4yNjg1OTUuNjcyMjY4OS42NzE0ODc3djEuMzQyOTc1NGMwIC40MDI4OTI3LS4yNjg5MDc1LjY3MTQ4NzgtLjY3MjI2ODkuNjcxNDg3OGgtLjY3MjI2ODljLS4yNjg5MDc2IDAtLjQ3MDU4ODIuMzM1NzQzOC0uMjY4OTA3Ni42MDQzMzg5bDIuNjg5MDc1NyAyLjY4NTk1MWMuMjY4OTA3NS4yNjg1OTUxLjI2ODkwNzUuNjcxNDg3NyAwIC45NDAwODI4bC0uOTQxMTc2NS45NDAwODI4Yy0uMjAxNjgwNy4yMDE0NDYzLS42MDUwNDIuMjAxNDQ2My0uODczOTQ5Ni0uMDY3MTQ4OHoiIGZpbGw9InVybCgjYSkiIHRyYW5zZm9ybT0ibWF0cml4KC43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAuNzA3MTA2NzggMTUuOTM1MDI5IC02Ljc4NDI3MSkiLz48L2c+PC9zdmc+"
+                                            width="32px" style="margin-bottom: 0px;" class="hide_icon">
                                     </div>
                                     <div class="col-10">
                                         <p class="faq_qTitle">At what stage is the project? Is it working?</p>
@@ -471,11 +470,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="question_box">
+                            <div class="question_box wow shake">
                                 <div class="row">
-                                    <div class="col-2" data-toggle="collapse" data-target="#q2"><img
-                                            src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMzUuMzc2MzElIiB4Mj0iOTYuMDQ2JSIgeTE9IjEuNTM4NDc4JSIgeTI9IjY1LjI2NDQ2OCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwZmZiNiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwZGNmZiIvPjwvbGluZWFyR3JhZGllbnQ+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAxIDMzKSI+PHJlY3QgaGVpZ2h0PSIzMyIgb3BhY2l0eT0iLjYiIHJ4PSIxNi41IiBzdHJva2U9InVybCgjYSkiIHdpZHRoPSIzMyIgeD0iLS41IiB5PSItLjUiLz48cGF0aCBkPSJtMTguMTQwMDQ3NSAxOS42MzI0MDM0LTIuNjg5MDc1Ni0yLjY4NTk1MDljLS4yMDE2ODA3LS4yMDE0NDYzLS42MDUwNDItLjA2NzE0ODgtLjYwNTA0Mi4yNjg1OTUxdi42NzE0ODc3YzAgLjQwMjg5MjctLjI2ODkwNzYuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0xLjM0NDUzNzhjLS40MDMzNjE0IDAtLjY3MjI2OS0uMjY4NTk1MS0uNjcyMjY5LS42NzE0ODc4di01LjM3MTkwMThjMC0uNDAyODkyNy4yNjg5MDc2LS42NzE0ODc3LjY3MjI2OS0uNjcxNDg3N2g1LjM3ODE1MTJjLjQwMzM2MTQgMCAuNjcyMjY4OS4yNjg1OTUuNjcyMjY4OS42NzE0ODc3djEuMzQyOTc1NGMwIC40MDI4OTI3LS4yNjg5MDc1LjY3MTQ4NzgtLjY3MjI2ODkuNjcxNDg3OGgtLjY3MjI2ODljLS4yNjg5MDc2IDAtLjQ3MDU4ODIuMzM1NzQzOC0uMjY4OTA3Ni42MDQzMzg5bDIuNjg5MDc1NyAyLjY4NTk1MWMuMjY4OTA3NS4yNjg1OTUxLjI2ODkwNzUuNjcxNDg3NyAwIC45NDAwODI4bC0uOTQxMTc2NS45NDAwODI4Yy0uMjAxNjgwNy4yMDE0NDYzLS42MDUwNDIuMjAxNDQ2My0uODczOTQ5Ni0uMDY3MTQ4OHoiIGZpbGw9InVybCgjYSkiIHRyYW5zZm9ybT0ibWF0cml4KC43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAuNzA3MTA2NzggMTUuOTM1MDI5IC02Ljc4NDI3MSkiLz48L2c+PC9zdmc+"
-                                            width="32px" style="margin-bottom: 0px;">
+                                    <div class="col-2 questioncollapse" data-toggle="collapse" data-target="#q2"
+                                        aria-expanded="false">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii4zMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+PHJlY3QgaGVpZ2h0PSIzMyIgcng9IjE2LjUiIHN0cm9rZT0iI2FlYWVhZSIgd2lkdGg9IjMzIiB4PSItLjUiIHk9Ii0uNSIvPjxwYXRoIGQ9Im0xOC4xNDAwNDc1IDE5LjYzMjQwMzQtMi42ODkwNzU2LTIuNjg1OTUwOWMtLjIwMTY4MDctLjIwMTQ0NjMtLjYwNTA0Mi0uMDY3MTQ4OC0uNjA1MDQyLjI2ODU5NTF2LjY3MTQ4NzdjMCAuNDAyODkyNy0uMjY4OTA3Ni42NzE0ODc4LS42NzIyNjg5LjY3MTQ4NzhoLTEuMzQ0NTM3OGMtLjQwMzM2MTQgMC0uNjcyMjY5LS4yNjg1OTUxLS42NzIyNjktLjY3MTQ4Nzh2LTUuMzcxOTAxOGMwLS40MDI4OTI3LjI2ODkwNzYtLjY3MTQ4NzcuNjcyMjY5LS42NzE0ODc3aDUuMzc4MTUxMmMuNDAzMzYxNCAwIC42NzIyNjg5LjI2ODU5NS42NzIyNjg5LjY3MTQ4Nzd2MS4zNDI5NzU0YzAgLjQwMjg5MjctLjI2ODkwNzUuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0uNjcyMjY4OWMtLjI2ODkwNzYgMC0uNDcwNTg4Mi4zMzU3NDM4LS4yNjg5MDc2LjYwNDMzODlsMi42ODkwNzU3IDIuNjg1OTUxYy4yNjg5MDc1LjI2ODU5NTEuMjY4OTA3NS42NzE0ODc3IDAgLjk0MDA4MjhsLS45NDExNzY1Ljk0MDA4MjhjLS4yMDE2ODA3LjIwMTQ0NjMtLjYwNTA0Mi4yMDE0NDYzLS44NzM5NDk2LS4wNjcxNDg4eiIgZmlsbD0iI2FlYWVhZSIgdHJhbnNmb3JtPSJtYXRyaXgoLjcwNzEwNjc4IC43MDcxMDY3OCAtLjcwNzEwNjc4IC43MDcxMDY3OCAxNS45MzUwMjkgLTYuNzg0MjcxKSIvPjwvZz48L3N2Zz4="
+                                            width="32px" style="margin-bottom: 0px;" class="show_icon">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMzUuMzc2MzElIiB4Mj0iOTYuMDQ2JSIgeTE9IjEuNTM4NDc4JSIgeTI9IjY1LjI2NDQ2OCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwZmZiNiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwZGNmZiIvPjwvbGluZWFyR3JhZGllbnQ+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAxIDMzKSI+PHJlY3QgaGVpZ2h0PSIzMyIgb3BhY2l0eT0iLjYiIHJ4PSIxNi41IiBzdHJva2U9InVybCgjYSkiIHdpZHRoPSIzMyIgeD0iLS41IiB5PSItLjUiLz48cGF0aCBkPSJtMTguMTQwMDQ3NSAxOS42MzI0MDM0LTIuNjg5MDc1Ni0yLjY4NTk1MDljLS4yMDE2ODA3LS4yMDE0NDYzLS42MDUwNDItLjA2NzE0ODgtLjYwNTA0Mi4yNjg1OTUxdi42NzE0ODc3YzAgLjQwMjg5MjctLjI2ODkwNzYuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0xLjM0NDUzNzhjLS40MDMzNjE0IDAtLjY3MjI2OS0uMjY4NTk1MS0uNjcyMjY5LS42NzE0ODc4di01LjM3MTkwMThjMC0uNDAyODkyNy4yNjg5MDc2LS42NzE0ODc3LjY3MjI2OS0uNjcxNDg3N2g1LjM3ODE1MTJjLjQwMzM2MTQgMCAuNjcyMjY4OS4yNjg1OTUuNjcyMjY4OS42NzE0ODc3djEuMzQyOTc1NGMwIC40MDI4OTI3LS4yNjg5MDc1LjY3MTQ4NzgtLjY3MjI2ODkuNjcxNDg3OGgtLjY3MjI2ODljLS4yNjg5MDc2IDAtLjQ3MDU4ODIuMzM1NzQzOC0uMjY4OTA3Ni42MDQzMzg5bDIuNjg5MDc1NyAyLjY4NTk1MWMuMjY4OTA3NS4yNjg1OTUxLjI2ODkwNzUuNjcxNDg3NyAwIC45NDAwODI4bC0uOTQxMTc2NS45NDAwODI4Yy0uMjAxNjgwNy4yMDE0NDYzLS42MDUwNDIuMjAxNDQ2My0uODczOTQ5Ni0uMDY3MTQ4OHoiIGZpbGw9InVybCgjYSkiIHRyYW5zZm9ybT0ibWF0cml4KC43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAuNzA3MTA2NzggMTUuOTM1MDI5IC02Ljc4NDI3MSkiLz48L2c+PC9zdmc+"
+                                            width="32px" style="margin-bottom: 0px;" class="hide_icon">
                                     </div>
                                     <div class="col-10">
                                         <p class="faq_qTitle">What's CoTrader's business model?</p>
@@ -490,12 +492,15 @@
                                 </div>
                             </div>
 
-                            <div class="question_box">
+                            <div class="question_box wow fadeInRight">
                                 <div class="row">
-                                    <div class="col-2" data-toggle="collapse" data-target="#q3"><img
-                                            src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMzUuMzc2MzElIiB4Mj0iOTYuMDQ2JSIgeTE9IjEuNTM4NDc4JSIgeTI9IjY1LjI2NDQ2OCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwZmZiNiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwZGNmZiIvPjwvbGluZWFyR3JhZGllbnQ+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAxIDMzKSI+PHJlY3QgaGVpZ2h0PSIzMyIgb3BhY2l0eT0iLjYiIHJ4PSIxNi41IiBzdHJva2U9InVybCgjYSkiIHdpZHRoPSIzMyIgeD0iLS41IiB5PSItLjUiLz48cGF0aCBkPSJtMTguMTQwMDQ3NSAxOS42MzI0MDM0LTIuNjg5MDc1Ni0yLjY4NTk1MDljLS4yMDE2ODA3LS4yMDE0NDYzLS42MDUwNDItLjA2NzE0ODgtLjYwNTA0Mi4yNjg1OTUxdi42NzE0ODc3YzAgLjQwMjg5MjctLjI2ODkwNzYuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0xLjM0NDUzNzhjLS40MDMzNjE0IDAtLjY3MjI2OS0uMjY4NTk1MS0uNjcyMjY5LS42NzE0ODc4di01LjM3MTkwMThjMC0uNDAyODkyNy4yNjg5MDc2LS42NzE0ODc3LjY3MjI2OS0uNjcxNDg3N2g1LjM3ODE1MTJjLjQwMzM2MTQgMCAuNjcyMjY4OS4yNjg1OTUuNjcyMjY4OS42NzE0ODc3djEuMzQyOTc1NGMwIC40MDI4OTI3LS4yNjg5MDc1LjY3MTQ4NzgtLjY3MjI2ODkuNjcxNDg3OGgtLjY3MjI2ODljLS4yNjg5MDc2IDAtLjQ3MDU4ODIuMzM1NzQzOC0uMjY4OTA3Ni42MDQzMzg5bDIuNjg5MDc1NyAyLjY4NTk1MWMuMjY4OTA3NS4yNjg1OTUxLjI2ODkwNzUuNjcxNDg3NyAwIC45NDAwODI4bC0uOTQxMTc2NS45NDAwODI4Yy0uMjAxNjgwNy4yMDE0NDYzLS42MDUwNDIuMjAxNDQ2My0uODczOTQ5Ni0uMDY3MTQ4OHoiIGZpbGw9InVybCgjYSkiIHRyYW5zZm9ybT0ibWF0cml4KC43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAuNzA3MTA2NzggMTUuOTM1MDI5IC02Ljc4NDI3MSkiLz48L2c+PC9zdmc+"
-                                            width="32px" style="margin-bottom: 0px;">
-                                    </div>
+                                    <div class="col-2 questioncollapse" data-toggle="collapse" data-target="#q3"
+                                    aria-expanded="false">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii4zMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+PHJlY3QgaGVpZ2h0PSIzMyIgcng9IjE2LjUiIHN0cm9rZT0iI2FlYWVhZSIgd2lkdGg9IjMzIiB4PSItLjUiIHk9Ii0uNSIvPjxwYXRoIGQ9Im0xOC4xNDAwNDc1IDE5LjYzMjQwMzQtMi42ODkwNzU2LTIuNjg1OTUwOWMtLjIwMTY4MDctLjIwMTQ0NjMtLjYwNTA0Mi0uMDY3MTQ4OC0uNjA1MDQyLjI2ODU5NTF2LjY3MTQ4NzdjMCAuNDAyODkyNy0uMjY4OTA3Ni42NzE0ODc4LS42NzIyNjg5LjY3MTQ4NzhoLTEuMzQ0NTM3OGMtLjQwMzM2MTQgMC0uNjcyMjY5LS4yNjg1OTUxLS42NzIyNjktLjY3MTQ4Nzh2LTUuMzcxOTAxOGMwLS40MDI4OTI3LjI2ODkwNzYtLjY3MTQ4NzcuNjcyMjY5LS42NzE0ODc3aDUuMzc4MTUxMmMuNDAzMzYxNCAwIC42NzIyNjg5LjI2ODU5NS42NzIyNjg5LjY3MTQ4Nzd2MS4zNDI5NzU0YzAgLjQwMjg5MjctLjI2ODkwNzUuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0uNjcyMjY4OWMtLjI2ODkwNzYgMC0uNDcwNTg4Mi4zMzU3NDM4LS4yNjg5MDc2LjYwNDMzODlsMi42ODkwNzU3IDIuNjg1OTUxYy4yNjg5MDc1LjI2ODU5NTEuMjY4OTA3NS42NzE0ODc3IDAgLjk0MDA4MjhsLS45NDExNzY1Ljk0MDA4MjhjLS4yMDE2ODA3LjIwMTQ0NjMtLjYwNTA0Mi4yMDE0NDYzLS44NzM5NDk2LS4wNjcxNDg4eiIgZmlsbD0iI2FlYWVhZSIgdHJhbnNmb3JtPSJtYXRyaXgoLjcwNzEwNjc4IC43MDcxMDY3OCAtLjcwNzEwNjc4IC43MDcxMDY3OCAxNS45MzUwMjkgLTYuNzg0MjcxKSIvPjwvZz48L3N2Zz4="
+                                        width="32px" style="margin-bottom: 0px;" class="show_icon">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMzUuMzc2MzElIiB4Mj0iOTYuMDQ2JSIgeTE9IjEuNTM4NDc4JSIgeTI9IjY1LjI2NDQ2OCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwZmZiNiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwZGNmZiIvPjwvbGluZWFyR3JhZGllbnQ+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAxIDMzKSI+PHJlY3QgaGVpZ2h0PSIzMyIgb3BhY2l0eT0iLjYiIHJ4PSIxNi41IiBzdHJva2U9InVybCgjYSkiIHdpZHRoPSIzMyIgeD0iLS41IiB5PSItLjUiLz48cGF0aCBkPSJtMTguMTQwMDQ3NSAxOS42MzI0MDM0LTIuNjg5MDc1Ni0yLjY4NTk1MDljLS4yMDE2ODA3LS4yMDE0NDYzLS42MDUwNDItLjA2NzE0ODgtLjYwNTA0Mi4yNjg1OTUxdi42NzE0ODc3YzAgLjQwMjg5MjctLjI2ODkwNzYuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0xLjM0NDUzNzhjLS40MDMzNjE0IDAtLjY3MjI2OS0uMjY4NTk1MS0uNjcyMjY5LS42NzE0ODc4di01LjM3MTkwMThjMC0uNDAyODkyNy4yNjg5MDc2LS42NzE0ODc3LjY3MjI2OS0uNjcxNDg3N2g1LjM3ODE1MTJjLjQwMzM2MTQgMCAuNjcyMjY4OS4yNjg1OTUuNjcyMjY4OS42NzE0ODc3djEuMzQyOTc1NGMwIC40MDI4OTI3LS4yNjg5MDc1LjY3MTQ4NzgtLjY3MjI2ODkuNjcxNDg3OGgtLjY3MjI2ODljLS4yNjg5MDc2IDAtLjQ3MDU4ODIuMzM1NzQzOC0uMjY4OTA3Ni42MDQzMzg5bDIuNjg5MDc1NyAyLjY4NTk1MWMuMjY4OTA3NS4yNjg1OTUxLjI2ODkwNzUuNjcxNDg3NyAwIC45NDAwODI4bC0uOTQxMTc2NS45NDAwODI4Yy0uMjAxNjgwNy4yMDE0NDYzLS42MDUwNDIuMjAxNDQ2My0uODczOTQ5Ni0uMDY3MTQ4OHoiIGZpbGw9InVybCgjYSkiIHRyYW5zZm9ybT0ibWF0cml4KC43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAuNzA3MTA2NzggMTUuOTM1MDI5IC02Ljc4NDI3MSkiLz48L2c+PC9zdmc+"
+                                        width="32px" style="margin-bottom: 0px;" class="hide_icon">
+                                </div>
                                     <div class="col-10">
                                         <p class="faq_qTitle">What's the usage value of the token?</p>
                                         <div id="q3" class="collapse" data-parent="#faqAccordion">
@@ -507,11 +512,14 @@
                                 </div>
                             </div>
 
-                            <div class="question_box">
+                            <div class="question_box wow bounce">
                                 <div class="row">
-                                    <div class="col-2" data-toggle="collapse" data-target="#q4"><img
-                                            src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMzUuMzc2MzElIiB4Mj0iOTYuMDQ2JSIgeTE9IjEuNTM4NDc4JSIgeTI9IjY1LjI2NDQ2OCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwZmZiNiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwZGNmZiIvPjwvbGluZWFyR3JhZGllbnQ+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAxIDMzKSI+PHJlY3QgaGVpZ2h0PSIzMyIgb3BhY2l0eT0iLjYiIHJ4PSIxNi41IiBzdHJva2U9InVybCgjYSkiIHdpZHRoPSIzMyIgeD0iLS41IiB5PSItLjUiLz48cGF0aCBkPSJtMTguMTQwMDQ3NSAxOS42MzI0MDM0LTIuNjg5MDc1Ni0yLjY4NTk1MDljLS4yMDE2ODA3LS4yMDE0NDYzLS42MDUwNDItLjA2NzE0ODgtLjYwNTA0Mi4yNjg1OTUxdi42NzE0ODc3YzAgLjQwMjg5MjctLjI2ODkwNzYuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0xLjM0NDUzNzhjLS40MDMzNjE0IDAtLjY3MjI2OS0uMjY4NTk1MS0uNjcyMjY5LS42NzE0ODc4di01LjM3MTkwMThjMC0uNDAyODkyNy4yNjg5MDc2LS42NzE0ODc3LjY3MjI2OS0uNjcxNDg3N2g1LjM3ODE1MTJjLjQwMzM2MTQgMCAuNjcyMjY4OS4yNjg1OTUuNjcyMjY4OS42NzE0ODc3djEuMzQyOTc1NGMwIC40MDI4OTI3LS4yNjg5MDc1LjY3MTQ4NzgtLjY3MjI2ODkuNjcxNDg3OGgtLjY3MjI2ODljLS4yNjg5MDc2IDAtLjQ3MDU4ODIuMzM1NzQzOC0uMjY4OTA3Ni42MDQzMzg5bDIuNjg5MDc1NyAyLjY4NTk1MWMuMjY4OTA3NS4yNjg1OTUxLjI2ODkwNzUuNjcxNDg3NyAwIC45NDAwODI4bC0uOTQxMTc2NS45NDAwODI4Yy0uMjAxNjgwNy4yMDE0NDYzLS42MDUwNDIuMjAxNDQ2My0uODczOTQ5Ni0uMDY3MTQ4OHoiIGZpbGw9InVybCgjYSkiIHRyYW5zZm9ybT0ibWF0cml4KC43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAuNzA3MTA2NzggMTUuOTM1MDI5IC02Ljc4NDI3MSkiLz48L2c+PC9zdmc+"
-                                            width="32px" style="margin-bottom: 0px;">
+                                    <div class="col-2 questioncollapse" data-toggle="collapse" data-target="#q4"
+                                        aria-expanded="false">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii4zMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+PHJlY3QgaGVpZ2h0PSIzMyIgcng9IjE2LjUiIHN0cm9rZT0iI2FlYWVhZSIgd2lkdGg9IjMzIiB4PSItLjUiIHk9Ii0uNSIvPjxwYXRoIGQ9Im0xOC4xNDAwNDc1IDE5LjYzMjQwMzQtMi42ODkwNzU2LTIuNjg1OTUwOWMtLjIwMTY4MDctLjIwMTQ0NjMtLjYwNTA0Mi0uMDY3MTQ4OC0uNjA1MDQyLjI2ODU5NTF2LjY3MTQ4NzdjMCAuNDAyODkyNy0uMjY4OTA3Ni42NzE0ODc4LS42NzIyNjg5LjY3MTQ4NzhoLTEuMzQ0NTM3OGMtLjQwMzM2MTQgMC0uNjcyMjY5LS4yNjg1OTUxLS42NzIyNjktLjY3MTQ4Nzh2LTUuMzcxOTAxOGMwLS40MDI4OTI3LjI2ODkwNzYtLjY3MTQ4NzcuNjcyMjY5LS42NzE0ODc3aDUuMzc4MTUxMmMuNDAzMzYxNCAwIC42NzIyNjg5LjI2ODU5NS42NzIyNjg5LjY3MTQ4Nzd2MS4zNDI5NzU0YzAgLjQwMjg5MjctLjI2ODkwNzUuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0uNjcyMjY4OWMtLjI2ODkwNzYgMC0uNDcwNTg4Mi4zMzU3NDM4LS4yNjg5MDc2LjYwNDMzODlsMi42ODkwNzU3IDIuNjg1OTUxYy4yNjg5MDc1LjI2ODU5NTEuMjY4OTA3NS42NzE0ODc3IDAgLjk0MDA4MjhsLS45NDExNzY1Ljk0MDA4MjhjLS4yMDE2ODA3LjIwMTQ0NjMtLjYwNTA0Mi4yMDE0NDYzLS44NzM5NDk2LS4wNjcxNDg4eiIgZmlsbD0iI2FlYWVhZSIgdHJhbnNmb3JtPSJtYXRyaXgoLjcwNzEwNjc4IC43MDcxMDY3OCAtLjcwNzEwNjc4IC43MDcxMDY3OCAxNS45MzUwMjkgLTYuNzg0MjcxKSIvPjwvZz48L3N2Zz4="
+                                            width="32px" style="margin-bottom: 0px;" class="show_icon">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMzUuMzc2MzElIiB4Mj0iOTYuMDQ2JSIgeTE9IjEuNTM4NDc4JSIgeTI9IjY1LjI2NDQ2OCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwZmZiNiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwZGNmZiIvPjwvbGluZWFyR3JhZGllbnQ+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAxIDMzKSI+PHJlY3QgaGVpZ2h0PSIzMyIgb3BhY2l0eT0iLjYiIHJ4PSIxNi41IiBzdHJva2U9InVybCgjYSkiIHdpZHRoPSIzMyIgeD0iLS41IiB5PSItLjUiLz48cGF0aCBkPSJtMTguMTQwMDQ3NSAxOS42MzI0MDM0LTIuNjg5MDc1Ni0yLjY4NTk1MDljLS4yMDE2ODA3LS4yMDE0NDYzLS42MDUwNDItLjA2NzE0ODgtLjYwNTA0Mi4yNjg1OTUxdi42NzE0ODc3YzAgLjQwMjg5MjctLjI2ODkwNzYuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0xLjM0NDUzNzhjLS40MDMzNjE0IDAtLjY3MjI2OS0uMjY4NTk1MS0uNjcyMjY5LS42NzE0ODc4di01LjM3MTkwMThjMC0uNDAyODkyNy4yNjg5MDc2LS42NzE0ODc3LjY3MjI2OS0uNjcxNDg3N2g1LjM3ODE1MTJjLjQwMzM2MTQgMCAuNjcyMjY4OS4yNjg1OTUuNjcyMjY4OS42NzE0ODc3djEuMzQyOTc1NGMwIC40MDI4OTI3LS4yNjg5MDc1LjY3MTQ4NzgtLjY3MjI2ODkuNjcxNDg3OGgtLjY3MjI2ODljLS4yNjg5MDc2IDAtLjQ3MDU4ODIuMzM1NzQzOC0uMjY4OTA3Ni42MDQzMzg5bDIuNjg5MDc1NyAyLjY4NTk1MWMuMjY4OTA3NS4yNjg1OTUxLjI2ODkwNzUuNjcxNDg3NyAwIC45NDAwODI4bC0uOTQxMTc2NS45NDAwODI4Yy0uMjAxNjgwNy4yMDE0NDYzLS42MDUwNDIuMjAxNDQ2My0uODczOTQ5Ni0uMDY3MTQ4OHoiIGZpbGw9InVybCgjYSkiIHRyYW5zZm9ybT0ibWF0cml4KC43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAuNzA3MTA2NzggMTUuOTM1MDI5IC02Ljc4NDI3MSkiLz48L2c+PC9zdmc+"
+                                            width="32px" style="margin-bottom: 0px;" class="hide_icon">
                                     </div>
                                     <div class="col-10">
                                         <p class="faq_qTitle">Is there COT token burning</p>
@@ -524,12 +532,15 @@
                                 </div>
                             </div>
 
-                            <div class="question_box">
+                            <div class="question_box wow fadeInLeft ">
                                 <div class="row">
-                                    <div class="col-2" data-toggle="collapse" data-target="#q5"><img
-                                            src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMzUuMzc2MzElIiB4Mj0iOTYuMDQ2JSIgeTE9IjEuNTM4NDc4JSIgeTI9IjY1LjI2NDQ2OCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwZmZiNiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwZGNmZiIvPjwvbGluZWFyR3JhZGllbnQ+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAxIDMzKSI+PHJlY3QgaGVpZ2h0PSIzMyIgb3BhY2l0eT0iLjYiIHJ4PSIxNi41IiBzdHJva2U9InVybCgjYSkiIHdpZHRoPSIzMyIgeD0iLS41IiB5PSItLjUiLz48cGF0aCBkPSJtMTguMTQwMDQ3NSAxOS42MzI0MDM0LTIuNjg5MDc1Ni0yLjY4NTk1MDljLS4yMDE2ODA3LS4yMDE0NDYzLS42MDUwNDItLjA2NzE0ODgtLjYwNTA0Mi4yNjg1OTUxdi42NzE0ODc3YzAgLjQwMjg5MjctLjI2ODkwNzYuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0xLjM0NDUzNzhjLS40MDMzNjE0IDAtLjY3MjI2OS0uMjY4NTk1MS0uNjcyMjY5LS42NzE0ODc4di01LjM3MTkwMThjMC0uNDAyODkyNy4yNjg5MDc2LS42NzE0ODc3LjY3MjI2OS0uNjcxNDg3N2g1LjM3ODE1MTJjLjQwMzM2MTQgMCAuNjcyMjY4OS4yNjg1OTUuNjcyMjY4OS42NzE0ODc3djEuMzQyOTc1NGMwIC40MDI4OTI3LS4yNjg5MDc1LjY3MTQ4NzgtLjY3MjI2ODkuNjcxNDg3OGgtLjY3MjI2ODljLS4yNjg5MDc2IDAtLjQ3MDU4ODIuMzM1NzQzOC0uMjY4OTA3Ni42MDQzMzg5bDIuNjg5MDc1NyAyLjY4NTk1MWMuMjY4OTA3NS4yNjg1OTUxLjI2ODkwNzUuNjcxNDg3NyAwIC45NDAwODI4bC0uOTQxMTc2NS45NDAwODI4Yy0uMjAxNjgwNy4yMDE0NDYzLS42MDUwNDIuMjAxNDQ2My0uODczOTQ5Ni0uMDY3MTQ4OHoiIGZpbGw9InVybCgjYSkiIHRyYW5zZm9ybT0ibWF0cml4KC43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAuNzA3MTA2NzggMTUuOTM1MDI5IC02Ljc4NDI3MSkiLz48L2c+PC9zdmc+"
-                                            width="32px" style="margin-bottom: 0px;">
-                                    </div>
+                                    <div class="col-2 questioncollapse" data-toggle="collapse" data-target="#q5"
+                                    aria-expanded="false">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii4zMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+PHJlY3QgaGVpZ2h0PSIzMyIgcng9IjE2LjUiIHN0cm9rZT0iI2FlYWVhZSIgd2lkdGg9IjMzIiB4PSItLjUiIHk9Ii0uNSIvPjxwYXRoIGQ9Im0xOC4xNDAwNDc1IDE5LjYzMjQwMzQtMi42ODkwNzU2LTIuNjg1OTUwOWMtLjIwMTY4MDctLjIwMTQ0NjMtLjYwNTA0Mi0uMDY3MTQ4OC0uNjA1MDQyLjI2ODU5NTF2LjY3MTQ4NzdjMCAuNDAyODkyNy0uMjY4OTA3Ni42NzE0ODc4LS42NzIyNjg5LjY3MTQ4NzhoLTEuMzQ0NTM3OGMtLjQwMzM2MTQgMC0uNjcyMjY5LS4yNjg1OTUxLS42NzIyNjktLjY3MTQ4Nzh2LTUuMzcxOTAxOGMwLS40MDI4OTI3LjI2ODkwNzYtLjY3MTQ4NzcuNjcyMjY5LS42NzE0ODc3aDUuMzc4MTUxMmMuNDAzMzYxNCAwIC42NzIyNjg5LjI2ODU5NS42NzIyNjg5LjY3MTQ4Nzd2MS4zNDI5NzU0YzAgLjQwMjg5MjctLjI2ODkwNzUuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0uNjcyMjY4OWMtLjI2ODkwNzYgMC0uNDcwNTg4Mi4zMzU3NDM4LS4yNjg5MDc2LjYwNDMzODlsMi42ODkwNzU3IDIuNjg1OTUxYy4yNjg5MDc1LjI2ODU5NTEuMjY4OTA3NS42NzE0ODc3IDAgLjk0MDA4MjhsLS45NDExNzY1Ljk0MDA4MjhjLS4yMDE2ODA3LjIwMTQ0NjMtLjYwNTA0Mi4yMDE0NDYzLS44NzM5NDk2LS4wNjcxNDg4eiIgZmlsbD0iI2FlYWVhZSIgdHJhbnNmb3JtPSJtYXRyaXgoLjcwNzEwNjc4IC43MDcxMDY3OCAtLjcwNzEwNjc4IC43MDcxMDY3OCAxNS45MzUwMjkgLTYuNzg0MjcxKSIvPjwvZz48L3N2Zz4="
+                                        width="32px" style="margin-bottom: 0px;" class="show_icon">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMzUuMzc2MzElIiB4Mj0iOTYuMDQ2JSIgeTE9IjEuNTM4NDc4JSIgeTI9IjY1LjI2NDQ2OCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwZmZiNiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwZGNmZiIvPjwvbGluZWFyR3JhZGllbnQ+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAxIDMzKSI+PHJlY3QgaGVpZ2h0PSIzMyIgb3BhY2l0eT0iLjYiIHJ4PSIxNi41IiBzdHJva2U9InVybCgjYSkiIHdpZHRoPSIzMyIgeD0iLS41IiB5PSItLjUiLz48cGF0aCBkPSJtMTguMTQwMDQ3NSAxOS42MzI0MDM0LTIuNjg5MDc1Ni0yLjY4NTk1MDljLS4yMDE2ODA3LS4yMDE0NDYzLS42MDUwNDItLjA2NzE0ODgtLjYwNTA0Mi4yNjg1OTUxdi42NzE0ODc3YzAgLjQwMjg5MjctLjI2ODkwNzYuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0xLjM0NDUzNzhjLS40MDMzNjE0IDAtLjY3MjI2OS0uMjY4NTk1MS0uNjcyMjY5LS42NzE0ODc4di01LjM3MTkwMThjMC0uNDAyODkyNy4yNjg5MDc2LS42NzE0ODc3LjY3MjI2OS0uNjcxNDg3N2g1LjM3ODE1MTJjLjQwMzM2MTQgMCAuNjcyMjY4OS4yNjg1OTUuNjcyMjY4OS42NzE0ODc3djEuMzQyOTc1NGMwIC40MDI4OTI3LS4yNjg5MDc1LjY3MTQ4NzgtLjY3MjI2ODkuNjcxNDg3OGgtLjY3MjI2ODljLS4yNjg5MDc2IDAtLjQ3MDU4ODIuMzM1NzQzOC0uMjY4OTA3Ni42MDQzMzg5bDIuNjg5MDc1NyAyLjY4NTk1MWMuMjY4OTA3NS4yNjg1OTUxLjI2ODkwNzUuNjcxNDg3NyAwIC45NDAwODI4bC0uOTQxMTc2NS45NDAwODI4Yy0uMjAxNjgwNy4yMDE0NDYzLS42MDUwNDIuMjAxNDQ2My0uODczOTQ5Ni0uMDY3MTQ4OHoiIGZpbGw9InVybCgjYSkiIHRyYW5zZm9ybT0ibWF0cml4KC43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAuNzA3MTA2NzggMTUuOTM1MDI5IC02Ljc4NDI3MSkiLz48L2c+PC9zdmc+"
+                                        width="32px" style="margin-bottom: 0px;" class="hide_icon">
+                                </div>
                                     <div class="col-10">
                                         <p class="faq_qTitle">Will supply be reduced?</p>
                                         <div id="q5" class="collapse" data-parent="#faqAccordion">
@@ -544,13 +555,13 @@
                         </div>
                     </div>
                     <div class="col-12 order-1 col-lg-5 order-lg-2 offset-lg-1">
-                        <div class="faq_title_wrapper">
+                        <div class="faq_title_wrapper wow fadeInDown">
                             <h3 class="TitleAlt-fa" style="margin-bottom: 0px;">Frequently Asked</h3>
                             <h1 class="title_format">
                                 Questions</h1>
 
                         </div>
-                        <img class="FAQ__NoMobileImage-jvOzgU jVtszR" src="assets/images/faq-image.2939297c.png"
+                        <img class="FAQ__NoMobileImage-jvOzgU jVtszR wow bounceInLeft" src="assets/images/faq-image.2939297c.png"
                             width="100%" style="margin-top: 100px;">
                     </div>
                 </div>
@@ -558,24 +569,102 @@
         </section>
         <!-- faq section ends -->
 
+        <!-- cotrader team section starts-->
+        <section class="team_section section_my">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="title_format wow fadeInDown">Cotrader Team</h1>
+                    </div>
+                </div>
+
+
+                <div class="team_list">
+                    <div class="member_box">
+                        <img src="assets/images/Rover_Hal.png" alt="Rover_Hal.png">
+                        <div class="member_name">
+                            <p>GARY BERNSTEIN</p>
+                        </div>
+                        <div class="member_dest">
+                            <p>Team Leader</p>
+                        </div>
+                    </div>
+                    <!-- 2nd member -->
+                    <div class="member_box">
+                        <img src="assets/images/Rover_Hal.png" alt="Rover_Hal.png">
+                        <div class="member_name">
+                            <p>GARY BERNSTEIN</p>
+                        </div>
+                        <div class="member_dest">
+                            <p>Team Leader</p>
+                        </div>
+                    </div>
+                    <!-- 3rd member -->
+                    <div class="member_box">
+                        <img src="assets/images/Rover_Hal.png" alt="Rover_Hal.png">
+                        <div class="member_name">
+                            <p>GARY BERNSTEIN</p>
+                        </div>
+                        <div class="member_dest">
+                            <p>Team Leader</p>
+                        </div>
+                    </div>
+                    <!-- 4th member -->
+                    <div class="member_box">
+                        <img src="assets/images/Rover_Hal.png" alt="Rover_Hal.png">
+                        <div class="member_name">
+                            <p>GARY BERNSTEIN</p>
+                        </div>
+                        <div class="member_dest">
+                            <p>Team Leader</p>
+                        </div>
+                    </div>
+                    <!-- 5th member -->
+                    <div class="member_box">
+                        <img src="assets/images/Rover_Hal.png" alt="Rover_Hal.png">
+                        <div class="member_name">
+                            <p>GARY BERNSTEIN</p>
+                        </div>
+                        <div class="member_dest">
+                            <p>Team Leader</p>
+                        </div>
+                    </div>
+                    <!-- 6th member -->
+                    <div class="member_box">
+                        <img src="assets/images/Rover_Hal.png" alt="Rover_Hal.png">
+                        <div class="member_name">
+                            <p>GARY BERNSTEIN</p>
+                        </div>
+                        <div class="member_dest">
+                            <p>Team Leader</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- cotrader team section ends -->
+
+
+
         <!-- footer starts -->
         <footer class="footer_section">
             <div class="container">
-                <div class="row">
+                <div class="row ">
                     <div class="col-2 offset-1 col-sm-2 col-md-1 offset-md-0">
-                        <img
-                            class="footer_logo"
+                        <img class="footer_logo wow bounceOut"
                             src="data:image/png;base64,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">
                     </div>
                     <div class="col-10 offset-1 col-md-3 offset-md-0">
-                        <h3 class="footer_title">Why CoTrader</h3>
-                        <p>Blockchain enables a way for casual investors to achieve
+                        <h3 class="footer_title wow fadeInLeft">Why CoTrader</h3>
+                        <p class="wow fadeInDown">Blockchain enables a way for casual investors to achieve
                             similar results to the best traders in the world. Our goal is to bring more financial
                             freedom and gains to both parties, while revolutionizing how money and investing works for
                             all of us.</p>
                     </div>
                     <div class="col-10 offset-1 col-md-3 offset-md-1">
-                        <h3 class="footer_title">Join the Community</h3><span><a
+                        <h3 class="footer_title wow fadeInDown">Join the Community</h3><span><a
                                 class="SocialIcons__SocialIconWrapper-bxXgIs akLfd"
                                 href="https://twitter.com/cotrader_com" target="_blank"><svg
                                     class="svg-inline--fa fa-twitter fa-w-16 SocialIcons__SocialIcon-dCBpyG bdXSIT"
@@ -585,8 +674,8 @@
                                         d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
                                     </path>
                                 </svg>
-                                <!-- <i class="fab fa-twitter SocialIcons__SocialIcon-dCBpyG bdXSIT"></i> --></a><a
-                                class="SocialIcons__SocialIconWrapper-bxXgIs akLfd" href="https://t.me/CoTraders"
+                            </a>
+                            <a class="SocialIcons__SocialIconWrapper-bxXgIs akLfd" href="https://t.me/CoTraders"
                                 target="_blank"><svg
                                     class="svg-inline--fa fa-telegram-plane fa-w-14 SocialIcons__SocialIcon-dCBpyG bdXSIT"
                                     aria-hidden="true" data-prefix="fab" data-icon="telegram-plane" role="img"
@@ -595,8 +684,8 @@
                                         d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
                                     </path>
                                 </svg>
-                                <!-- <i class="fab fa-telegram-plane SocialIcons__SocialIcon-dCBpyG bdXSIT"></i> --></a><a
-                                class="SocialIcons__SocialIconWrapper-bxXgIs akLfd" href="https://t.me/CoTrader"
+                            </a>
+                            <a class="SocialIcons__SocialIconWrapper-bxXgIs akLfd" href="https://t.me/CoTrader"
                                 target="_blank"><svg
                                     class="svg-inline--fa fa-telegram-plane fa-w-14 SocialIcons__SocialIcon-dCBpyG bdXSIT"
                                     aria-hidden="true" data-prefix="fab" data-icon="telegram-plane" role="img"
@@ -605,8 +694,8 @@
                                         d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
                                     </path>
                                 </svg>
-                                <!-- <i class="fab fa-telegram-plane SocialIcons__SocialIcon-dCBpyG bdXSIT"></i> --></a><a
-                                class="SocialIcons__SocialIconWrapper-bxXgIs akLfd"
+                            </a>
+                            <a class="SocialIcons__SocialIconWrapper-bxXgIs akLfd"
                                 href="https://medium.com/@cotrader.com/cotrader-mainnet-v2-release-update-392b6a81e562"
                                 target="_blank"><svg
                                     class="svg-inline--fa fa-medium-m fa-w-16 SocialIcons__SocialIcon-dCBpyG bdXSIT"
@@ -616,8 +705,8 @@
                                         d="M71.5 142.3c.6-5.9-1.7-11.8-6.1-15.8L20.3 72.1V64h140.2l108.4 237.7L364.2 64h133.7v8.1l-38.6 37c-3.3 2.5-5 6.7-4.3 10.8v272c-.7 4.1 1 8.3 4.3 10.8l37.7 37v8.1H307.3v-8.1l39.1-37.9c3.8-3.8 3.8-5 3.8-10.8V171.2L241.5 447.1h-14.7L100.4 171.2v184.9c-1.1 7.8 1.5 15.6 7 21.2l50.8 61.6v8.1h-144v-8L65 377.3c5.4-5.6 7.9-13.5 6.5-21.2V142.3z">
                                     </path>
                                 </svg>
-                                <!-- <i class="fab fa-medium-m SocialIcons__SocialIcon-dCBpyG bdXSIT"></i> --></a><a
-                                class="SocialIcons__SocialIconWrapper-bxXgIs akLfd"
+                            </a>
+                            <a class="SocialIcons__SocialIconWrapper-bxXgIs akLfd"
                                 href="https://www.youtube.com/c/cotrader" target="_blank"><svg
                                     class="svg-inline--fa fa-youtube fa-w-18 SocialIcons__SocialIcon-dCBpyG bdXSIT"
                                     aria-hidden="true" data-prefix="fab" data-icon="youtube" role="img"
@@ -626,8 +715,8 @@
                                         d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
                                     </path>
                                 </svg>
-                                <!-- <i class="fab fa-youtube SocialIcons__SocialIcon-dCBpyG bdXSIT"></i> --></a><a
-                                class="SocialIcons__SocialIconWrapper-bxXgIs akLfd"
+                            </a>
+                            <a class="SocialIcons__SocialIconWrapper-bxXgIs akLfd"
                                 href="https://www.facebook.com/cotrader" target="_blank"><svg
                                     class="svg-inline--fa fa-facebook-f fa-w-9 SocialIcons__SocialIcon-dCBpyG bdXSIT"
                                     aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img"
@@ -636,8 +725,8 @@
                                         d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229">
                                     </path>
                                 </svg>
-                                <!-- <i class="fab fa-facebook-f SocialIcons__SocialIcon-dCBpyG bdXSIT"></i> --></a><a
-                                class="SocialIcons__SocialIconWrapper-bxXgIs akLfd"
+                            </a>
+                            <a class="SocialIcons__SocialIconWrapper-bxXgIs akLfd"
                                 href="https://www.linkedin.com/company/574164/" target="_blank"><svg
                                     class="svg-inline--fa fa-linkedin-in fa-w-14 SocialIcons__SocialIcon-dCBpyG bdXSIT"
                                     aria-hidden="true" data-prefix="fab" data-icon="linkedin-in" role="img"
@@ -646,8 +735,8 @@
                                         d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z">
                                     </path>
                                 </svg>
-                                <!-- <i class="fab fa-linkedin-in SocialIcons__SocialIcon-dCBpyG bdXSIT"></i> --></a><a
-                                class="SocialIcons__SocialIconWrapper-bxXgIs akLfd"
+                            </a>
+                            <a class="SocialIcons__SocialIconWrapper-bxXgIs akLfd"
                                 href="https://www.reddit.com/r/cotrader/" target="_blank"><svg
                                     class="svg-inline--fa fa-reddit-alien fa-w-16 SocialIcons__SocialIcon-dCBpyG bdXSIT"
                                     aria-hidden="true" data-prefix="fab" data-icon="reddit-alien" role="img"
@@ -656,8 +745,7 @@
                                         d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z">
                                     </path>
                                 </svg>
-                                <!-- <i class="fab fa-reddit-alien SocialIcons__SocialIcon-dCBpyG bdXSIT"></i> --></a><a
-                                class="SocialIcons__SocialIconWrapper-bxXgIs akLfd"
+                            </a><a class="SocialIcons__SocialIconWrapper-bxXgIs akLfd"
                                 href="https://github.com/CoTraderCore/token-sale" target="_blank"><svg
                                     class="svg-inline--fa fa-github fa-w-16 SocialIcons__SocialIcon-dCBpyG bdXSIT"
                                     aria-hidden="true" data-prefix="fab" data-icon="github" role="img"
@@ -666,17 +754,33 @@
                                         d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
                                     </path>
                                 </svg>
-                                <!-- <i class="fab fa-github SocialIcons__SocialIcon-dCBpyG bdXSIT"></i> --></a></span><a
-                            href="mailto:team@cotrader.com">
+                            </a></span><a href="mailto:team@cotrader.com">
                             <p class="FooterBody-eCIPCO fvKepn" style="margin-top: 15px;">team@cotrader.com</p>
                         </a>
                     </div>
-                   
-                        <button class="btn_telegram">
-                            Get Updated
-                        </button>
-                   
+
+                    <div class="col-10 offset-1 col-md-3 offset-md-1">
+                        <h3 class="footer_title wow fadeInRight">Get Updated</h3>
+                        <p class="wow bounce">Join our telegram and be updated when whitelisting begins.
+                        </p>
+                        <button class="btn_telegram wow shake"><svg class="svg-inline--fa fa-telegram-plane fa-w-14"
+                                aria-hidden="true" data-prefix="fab" data-icon="telegram-plane" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
+                                </path>
+                            </svg><span style="padding-left: 15px;">Telegram News</span></button>
+                    </div>
+
                 </div>
+
+                <div class="row">
+                    <div class="col-12 text-md-right mt-md-0 mt-4 text-center">
+                        <p>Fighting for financial freedom from 2017</p>
+                    </div>
+                </div>
+
+
             </div>
         </footer>
         <!-- footer ends -->
@@ -702,54 +806,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js">
-    </script>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/custom.js"></script>
+    <script type="text/javascript" src="./assets/js/wow.js"></script>
+
 
     <script>
-        // milestone slick js
-        $('.milestone_list_wrapper ul').slick({
-            dots: false,
-            infinite: false,
-            arrows: false,
-            swipeToSlide: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            draggable: true,
-            centerMode: false,
-            // centerPadding: '60px',
-            fade: false,
-            cssEase: 'linear',
-            responsive: [{
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 5,
-                    }
-                },
-
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 4,
-                    }
-                },
-
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 3,
-                    }
-                },
-                {
-                    breakpoint: 500,
-                    settings: {
-                        slidesToShow: 2,
-                    }
-                }
-            ]
-        });
+        wow = new WOW(
+  {
+    animateClass: 'animated',
+    offset: 100
+  }
+);
+         wow.init();
     </script>
+
+
 
 
 </body>
