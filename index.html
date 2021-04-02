@@ -19,7 +19,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/css/wow.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-	
+    <link type="text/css" rel="stylesheet" href="assets/clock_assets/flipclock.css" />
+
 
 </head>
 
@@ -30,7 +31,7 @@
         <!-- navbar starts -->
         <header id="main_navbar" class="fixed-top">
             <div class="container h-100">
-                <nav  class="navbar navbar-expand-md  navbar-dark h-100 my-auto">
+                <nav class="navbar navbar-expand-md  navbar-dark h-100 my-auto">
                     <!-- Brand -->
                     <a class="navbar-brand" href="#"><img src="assets/images//cotrader_logo.png"
                             alt="cotrader_logo.png">
@@ -40,7 +41,13 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#collapsibleNavbar">
                         <!-- <span class="navbar-toggler-icon"></span> -->
-                        <svg class="svg-inline--fa fa-bars fa-w-14" style="color: rgb(255, 255, 255);" aria-hidden="true" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+                        <svg class="svg-inline--fa fa-bars fa-w-14" style="color: rgb(255, 255, 255);"
+                            aria-hidden="true" data-prefix="fas" data-icon="bars" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                            </path>
+                        </svg>
                     </button>
 
                     <!-- Navbar links -->
@@ -91,6 +98,55 @@
                                 enable the best investors to manage both your BEP20 & ERC20 token funds without holding
                                 them. CoTrader can support tokens, pools, staking, stocks & derivatives
                             </p>
+
+                            <div id="clock" class="newclasclock-builder-output d-md-none mb-5">
+                                <div class="clock-builder-output flip-clock-small-wrapper">														
+                                    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+                                    <script type="text/javascript" src="clock_assets/flipclock.js"></script>
+                                    <style text="text/css">
+                                        body .flip-clock-wrapper ul li a div div.inn,
+                                        body .flip-clock-small-wrapper ul li a div div.inn {
+                                            color: #CCCCCC;
+                                            background-color: #140e1a;
+                                        }
+
+                                        body .flip-clock-dot,
+                                        body .flip-clock-small-wrapper .flip-clock-dot {
+                                            background: #CCCCCC;
+                                        }
+
+                                        body .flip-clock-wrapper .flip-clock-meridium a,
+                                        body .flip-clock-small-wrapper .flip-clock-meridium a {
+                                            color: #CCCCCC;
+                                        }
+                                    </style>
+                                    <script type="text/javascript">
+                                        $(function () {
+                                            FlipClock.Lang.Custom = { days: 'Days', hours: 'Hours', minutes: 'Minutes', seconds: 'Seconds' };
+                                            var opts = {
+                                                clockFace: 'DailyCounter',
+                                                countdown: true,
+                                                language: 'Custom'
+                                            };
+                                            opts.classes = {
+                                                active: 'flip-clock-active',
+                                                before: 'flip-clock-before',
+                                                divider: 'flip-clock-divider',
+                                                dot: 'flip-clock-dot',
+                                                label: 'flip-clock-label',
+                                                flip: 'flip',
+                                                play: 'play',
+                                                wrapper: 'flip-clock-small-wrapper'
+                                            };
+                                            var countdown = 1617210000 - ((new Date().getTime()) / 1000); // from: 03/22/2021 10:00 am -0700
+                                            countdown = Math.max(1, countdown);
+                                            $('.clock-builder-output').FlipClock(countdown, opts);
+                                        });
+                                    </script>
+                                <span class="flip-clock-divider days"><span class="flip-clock-label">Days</span></span><ul class="flip"><li data-digit="0" class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li><li data-digit="1" class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">1</div></div><div class="down"><div class="shadow"></div><div class="inn">1</div></div></a></li><li data-digit="2"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">2</div></div><div class="down"><div class="shadow"></div><div class="inn">2</div></div></a></li><li data-digit="3"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">3</div></div><div class="down"><div class="shadow"></div><div class="inn">3</div></div></a></li><li data-digit="4"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li data-digit="5"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li><li data-digit="6"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">6</div></div><div class="down"><div class="shadow"></div><div class="inn">6</div></div></a></li><li data-digit="7"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">7</div></div><div class="down"><div class="shadow"></div><div class="inn">7</div></div></a></li><li data-digit="8"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">8</div></div><div class="down"><div class="shadow"></div><div class="inn">8</div></div></a></li><li data-digit="9"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li></ul><ul class="flip"><li data-digit="0" class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li><li data-digit="1" class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">1</div></div><div class="down"><div class="shadow"></div><div class="inn">1</div></div></a></li><li data-digit="2"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">2</div></div><div class="down"><div class="shadow"></div><div class="inn">2</div></div></a></li><li data-digit="3"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">3</div></div><div class="down"><div class="shadow"></div><div class="inn">3</div></div></a></li><li data-digit="4"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li data-digit="5"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li><li data-digit="6"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">6</div></div><div class="down"><div class="shadow"></div><div class="inn">6</div></div></a></li><li data-digit="7"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">7</div></div><div class="down"><div class="shadow"></div><div class="inn">7</div></div></a></li><li data-digit="8"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">8</div></div><div class="down"><div class="shadow"></div><div class="inn">8</div></div></a></li><li data-digit="9"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li></ul><span class="flip-clock-divider hours"><span class="flip-clock-label">Hours</span><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip"><li data-digit="0" class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li><li data-digit="1" class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">1</div></div><div class="down"><div class="shadow"></div><div class="inn">1</div></div></a></li><li data-digit="2"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">2</div></div><div class="down"><div class="shadow"></div><div class="inn">2</div></div></a></li><li data-digit="3"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">3</div></div><div class="down"><div class="shadow"></div><div class="inn">3</div></div></a></li><li data-digit="4"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li data-digit="5"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li><li data-digit="6"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">6</div></div><div class="down"><div class="shadow"></div><div class="inn">6</div></div></a></li><li data-digit="7"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">7</div></div><div class="down"><div class="shadow"></div><div class="inn">7</div></div></a></li><li data-digit="8"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">8</div></div><div class="down"><div class="shadow"></div><div class="inn">8</div></div></a></li><li data-digit="9"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li></ul><ul class="flip"><li data-digit="0" class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li><li data-digit="1" class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">1</div></div><div class="down"><div class="shadow"></div><div class="inn">1</div></div></a></li><li data-digit="2"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">2</div></div><div class="down"><div class="shadow"></div><div class="inn">2</div></div></a></li><li data-digit="3"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">3</div></div><div class="down"><div class="shadow"></div><div class="inn">3</div></div></a></li><li data-digit="4"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li data-digit="5"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li><li data-digit="6"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">6</div></div><div class="down"><div class="shadow"></div><div class="inn">6</div></div></a></li><li data-digit="7"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">7</div></div><div class="down"><div class="shadow"></div><div class="inn">7</div></div></a></li><li data-digit="8"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">8</div></div><div class="down"><div class="shadow"></div><div class="inn">8</div></div></a></li><li data-digit="9"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li></ul><span class="flip-clock-divider minutes"><span class="flip-clock-label">Minutes</span><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip"><li data-digit="0" class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li><li data-digit="1" class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">1</div></div><div class="down"><div class="shadow"></div><div class="inn">1</div></div></a></li><li data-digit="2"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">2</div></div><div class="down"><div class="shadow"></div><div class="inn">2</div></div></a></li><li data-digit="3"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">3</div></div><div class="down"><div class="shadow"></div><div class="inn">3</div></div></a></li><li data-digit="4"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li data-digit="5"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul><ul class="flip"><li data-digit="0" class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li><li data-digit="1" class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">1</div></div><div class="down"><div class="shadow"></div><div class="inn">1</div></div></a></li><li data-digit="2"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">2</div></div><div class="down"><div class="shadow"></div><div class="inn">2</div></div></a></li><li data-digit="3"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">3</div></div><div class="down"><div class="shadow"></div><div class="inn">3</div></div></a></li><li data-digit="4"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li data-digit="5"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li><li data-digit="6"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">6</div></div><div class="down"><div class="shadow"></div><div class="inn">6</div></div></a></li><li data-digit="7"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">7</div></div><div class="down"><div class="shadow"></div><div class="inn">7</div></div></a></li><li data-digit="8"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">8</div></div><div class="down"><div class="shadow"></div><div class="inn">8</div></div></a></li><li data-digit="9"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li></ul><span class="flip-clock-divider seconds"><span class="flip-clock-label">Seconds</span><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip"><li data-digit="0" class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li><li data-digit="1" class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">1</div></div><div class="down"><div class="shadow"></div><div class="inn">1</div></div></a></li><li data-digit="2"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">2</div></div><div class="down"><div class="shadow"></div><div class="inn">2</div></div></a></li><li data-digit="3"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">3</div></div><div class="down"><div class="shadow"></div><div class="inn">3</div></div></a></li><li data-digit="4"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li data-digit="5"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul><ul class="flip"><li data-digit="0" class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li><li data-digit="1" class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">1</div></div><div class="down"><div class="shadow"></div><div class="inn">1</div></div></a></li><li data-digit="2" class=""><a href="#"><div class="up"><div class="shadow"></div><div class="inn">2</div></div><div class="down"><div class="shadow"></div><div class="inn">2</div></div></a></li><li data-digit="3"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">3</div></div><div class="down"><div class="shadow"></div><div class="inn">3</div></div></a></li><li data-digit="4"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li data-digit="5"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li><li data-digit="6"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">6</div></div><div class="down"><div class="shadow"></div><div class="inn">6</div></div></a></li><li data-digit="7"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">7</div></div><div class="down"><div class="shadow"></div><div class="inn">7</div></div></a></li><li data-digit="8"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">8</div></div><div class="down"><div class="shadow"></div><div class="inn">8</div></div></a></li><li data-digit="9"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li></ul></div>
+                            </div>
+
+
                         </div>
                     </div>
 
@@ -101,7 +157,8 @@
                                 <div data-depth="0.3"
                                     style="position: relative; width: 100%; height: 100%; z-index: 5; transform: translate3d(1.1px, -15.7px, 0px); transform-style: preserve-3d; backface-visibility: hidden; display: block; left: 0px; top: 0px;">
                                     <img src="assets/images/hero-image-dark-1.55f26bb0.png"
-                                        style="width: 45%; position: absolute; right: 5%;" class="wow fadeInRight"></div>
+                                        style="width: 45%; position: absolute; right: 5%;" class="wow fadeInRight">
+                                </div>
                                 <div data-depth="0.2"
                                     style="position: absolute; width: 100%; height: 100%; z-index: 4; transform: translate3d(0.7px, -10.5px, 0px); transform-style: preserve-3d; backface-visibility: hidden; display: block; left: 0px; top: 0px;">
                                     <img src="assets/images/hero-image-dark-2.4f1c5c51.png"
@@ -109,11 +166,13 @@
                                 <div data-depth="0.1"
                                     style="position: absolute; width: 100%; height: 100%; z-index: 2; transform: translate3d(0.4px, -5.2px, 0px); transform-style: preserve-3d; backface-visibility: hidden; display: block; left: 0px; top: 0px;">
                                     <img src="assets/images/hero-image-dark-3.9fb5edcc.png"
-                                        style="width: 86%; position: absolute; right: 0px; bottom: 0px;" class="wow fadeInUp"></div>
+                                        style="width: 86%; position: absolute; right: 0px; bottom: 0px;"
+                                        class="wow fadeInUp"></div>
                                 <div
                                     style="position: absolute; width: 100%; height: 100%; z-index: 3; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; display: block; left: 0px; top: 0px;">
                                     <img src="assets/images/hero-image-dark-4.4a1f333f.png"
-                                        style="width: 82%; position: absolute; left: 11%; bottom: 30%;" class="wow shake"></div>
+                                        style="width: 82%; position: absolute; left: 11%; bottom: 30%;"
+                                        class="wow shake"></div>
                             </div>
                         </div>
                     </div>
@@ -235,7 +294,8 @@
                         <div class="video_content">
                             <h3 class="wow fadeInDown">What is ?</h3>
                             <h1 class="title_format wow fadeInRight">CoTrader</h1>
-                            <p class="wow fadeInUp">Fully onchain funds platform connecting swap DEXs & DeFi dapps. Investor can withdraw
+                            <p class="wow fadeInUp">Fully onchain funds platform connecting swap DEXs & DeFi dapps.
+                                Investor can withdraw
                                 assets anytime, with security, privacy, and cryptographically proven ROI</p>
                         </div>
                     </div>
@@ -258,7 +318,8 @@
                         <div class="funding_content">
                             <h3 class="wow fadeInDown">Introducing</h3>
                             <h1 class="title_format wow fadeInLeft">Smart Funds</h1>
-                            <p class="wow fadeInUp">Smart funds enable traders to prove their ROI and trade assets on behalf of investor,
+                            <p class="wow fadeInUp">Smart funds enable traders to prove their ROI and trade assets on
+                                behalf of investor,
                                 while ensuring that only investors who deposit funds can withdraw them</p>
                         </div>
                     </div>
@@ -282,7 +343,8 @@
                             <h2 class="subtitle wow fadeInRight">
                                 LM, LGE, burn, no team tokens & market protection
                             </h2>
-                            <p class="wow fadeInUp">LM (Liquidity Mining) & LGE (Liquidity Generation Event) will be done automatically for
+                            <p class="wow fadeInUp">LM (Liquidity Mining) & LGE (Liquidity Generation Event) will be
+                                done automatically for
                                 the BSC upcoming launch using a dapp by our partner, Rover. RoverFetch will take BNB and
                                 fetch COT, and will then pool, stake, & compound APY. FetchCOT token holders can return
                                 it to RoverFetch to receive their increased COT. New BSC team tokens are used only in
@@ -412,9 +474,16 @@
                                             <p>DEX aggregators & pools</p>
                                         </div>
                                     </div>
-                                    
+
+
+
 
                                 </div>
+                                <!-- <div class="swiper-pagination"></div> -->
+
+                                <!-- If we need navigation buttons -->
+    <!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
                             </div>
                         </div>
                     </div>
@@ -458,11 +527,11 @@
         <!-- mission section ends -->
 
         <!-- faq section starts -->
-        <section id="faq" class="faq_section section_my">
+        <section id="faq" class="faq_section section_my pb-5">
             <div class="container">
                 <div class="row">
                     <div class="col-12 order-2 col-lg-6 order-lg-1">
-                        <div id="faqAccordion" >
+                        <div id="faqAccordion">
 
 
                             <div class="question_box wow fadeInLeft">
@@ -509,12 +578,12 @@
                             <div class="question_box wow fadeInRight">
                                 <div class="row">
                                     <div class="col-2 questioncollapse" data-toggle="collapse" data-target="#q3"
-                                    aria-expanded="false">
-                                    <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii4zMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+PHJlY3QgaGVpZ2h0PSIzMyIgcng9IjE2LjUiIHN0cm9rZT0iI2FlYWVhZSIgd2lkdGg9IjMzIiB4PSItLjUiIHk9Ii0uNSIvPjxwYXRoIGQ9Im0xOC4xNDAwNDc1IDE5LjYzMjQwMzQtMi42ODkwNzU2LTIuNjg1OTUwOWMtLjIwMTY4MDctLjIwMTQ0NjMtLjYwNTA0Mi0uMDY3MTQ4OC0uNjA1MDQyLjI2ODU5NTF2LjY3MTQ4NzdjMCAuNDAyODkyNy0uMjY4OTA3Ni42NzE0ODc4LS42NzIyNjg5LjY3MTQ4NzhoLTEuMzQ0NTM3OGMtLjQwMzM2MTQgMC0uNjcyMjY5LS4yNjg1OTUxLS42NzIyNjktLjY3MTQ4Nzh2LTUuMzcxOTAxOGMwLS40MDI4OTI3LjI2ODkwNzYtLjY3MTQ4NzcuNjcyMjY5LS42NzE0ODc3aDUuMzc4MTUxMmMuNDAzMzYxNCAwIC42NzIyNjg5LjI2ODU5NS42NzIyNjg5LjY3MTQ4Nzd2MS4zNDI5NzU0YzAgLjQwMjg5MjctLjI2ODkwNzUuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0uNjcyMjY4OWMtLjI2ODkwNzYgMC0uNDcwNTg4Mi4zMzU3NDM4LS4yNjg5MDc2LjYwNDMzODlsMi42ODkwNzU3IDIuNjg1OTUxYy4yNjg5MDc1LjI2ODU5NTEuMjY4OTA3NS42NzE0ODc3IDAgLjk0MDA4MjhsLS45NDExNzY1Ljk0MDA4MjhjLS4yMDE2ODA3LjIwMTQ0NjMtLjYwNTA0Mi4yMDE0NDYzLS44NzM5NDk2LS4wNjcxNDg4eiIgZmlsbD0iI2FlYWVhZSIgdHJhbnNmb3JtPSJtYXRyaXgoLjcwNzEwNjc4IC43MDcxMDY3OCAtLjcwNzEwNjc4IC43MDcxMDY3OCAxNS45MzUwMjkgLTYuNzg0MjcxKSIvPjwvZz48L3N2Zz4="
-                                        width="32px" style="margin-bottom: 0px;" class="show_icon">
-                                    <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMzUuMzc2MzElIiB4Mj0iOTYuMDQ2JSIgeTE9IjEuNTM4NDc4JSIgeTI9IjY1LjI2NDQ2OCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwZmZiNiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwZGNmZiIvPjwvbGluZWFyR3JhZGllbnQ+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAxIDMzKSI+PHJlY3QgaGVpZ2h0PSIzMyIgb3BhY2l0eT0iLjYiIHJ4PSIxNi41IiBzdHJva2U9InVybCgjYSkiIHdpZHRoPSIzMyIgeD0iLS41IiB5PSItLjUiLz48cGF0aCBkPSJtMTguMTQwMDQ3NSAxOS42MzI0MDM0LTIuNjg5MDc1Ni0yLjY4NTk1MDljLS4yMDE2ODA3LS4yMDE0NDYzLS42MDUwNDItLjA2NzE0ODgtLjYwNTA0Mi4yNjg1OTUxdi42NzE0ODc3YzAgLjQwMjg5MjctLjI2ODkwNzYuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0xLjM0NDUzNzhjLS40MDMzNjE0IDAtLjY3MjI2OS0uMjY4NTk1MS0uNjcyMjY5LS42NzE0ODc4di01LjM3MTkwMThjMC0uNDAyODkyNy4yNjg5MDc2LS42NzE0ODc3LjY3MjI2OS0uNjcxNDg3N2g1LjM3ODE1MTJjLjQwMzM2MTQgMCAuNjcyMjY4OS4yNjg1OTUuNjcyMjY4OS42NzE0ODc3djEuMzQyOTc1NGMwIC40MDI4OTI3LS4yNjg5MDc1LjY3MTQ4NzgtLjY3MjI2ODkuNjcxNDg3OGgtLjY3MjI2ODljLS4yNjg5MDc2IDAtLjQ3MDU4ODIuMzM1NzQzOC0uMjY4OTA3Ni42MDQzMzg5bDIuNjg5MDc1NyAyLjY4NTk1MWMuMjY4OTA3NS4yNjg1OTUxLjI2ODkwNzUuNjcxNDg3NyAwIC45NDAwODI4bC0uOTQxMTc2NS45NDAwODI4Yy0uMjAxNjgwNy4yMDE0NDYzLS42MDUwNDIuMjAxNDQ2My0uODczOTQ5Ni0uMDY3MTQ4OHoiIGZpbGw9InVybCgjYSkiIHRyYW5zZm9ybT0ibWF0cml4KC43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAuNzA3MTA2NzggMTUuOTM1MDI5IC02Ljc4NDI3MSkiLz48L2c+PC9zdmc+"
-                                        width="32px" style="margin-bottom: 0px;" class="hide_icon">
-                                </div>
+                                        aria-expanded="false">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii4zMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+PHJlY3QgaGVpZ2h0PSIzMyIgcng9IjE2LjUiIHN0cm9rZT0iI2FlYWVhZSIgd2lkdGg9IjMzIiB4PSItLjUiIHk9Ii0uNSIvPjxwYXRoIGQ9Im0xOC4xNDAwNDc1IDE5LjYzMjQwMzQtMi42ODkwNzU2LTIuNjg1OTUwOWMtLjIwMTY4MDctLjIwMTQ0NjMtLjYwNTA0Mi0uMDY3MTQ4OC0uNjA1MDQyLjI2ODU5NTF2LjY3MTQ4NzdjMCAuNDAyODkyNy0uMjY4OTA3Ni42NzE0ODc4LS42NzIyNjg5LjY3MTQ4NzhoLTEuMzQ0NTM3OGMtLjQwMzM2MTQgMC0uNjcyMjY5LS4yNjg1OTUxLS42NzIyNjktLjY3MTQ4Nzh2LTUuMzcxOTAxOGMwLS40MDI4OTI3LjI2ODkwNzYtLjY3MTQ4NzcuNjcyMjY5LS42NzE0ODc3aDUuMzc4MTUxMmMuNDAzMzYxNCAwIC42NzIyNjg5LjI2ODU5NS42NzIyNjg5LjY3MTQ4Nzd2MS4zNDI5NzU0YzAgLjQwMjg5MjctLjI2ODkwNzUuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0uNjcyMjY4OWMtLjI2ODkwNzYgMC0uNDcwNTg4Mi4zMzU3NDM4LS4yNjg5MDc2LjYwNDMzODlsMi42ODkwNzU3IDIuNjg1OTUxYy4yNjg5MDc1LjI2ODU5NTEuMjY4OTA3NS42NzE0ODc3IDAgLjk0MDA4MjhsLS45NDExNzY1Ljk0MDA4MjhjLS4yMDE2ODA3LjIwMTQ0NjMtLjYwNTA0Mi4yMDE0NDYzLS44NzM5NDk2LS4wNjcxNDg4eiIgZmlsbD0iI2FlYWVhZSIgdHJhbnNmb3JtPSJtYXRyaXgoLjcwNzEwNjc4IC43MDcxMDY3OCAtLjcwNzEwNjc4IC43MDcxMDY3OCAxNS45MzUwMjkgLTYuNzg0MjcxKSIvPjwvZz48L3N2Zz4="
+                                            width="32px" style="margin-bottom: 0px;" class="show_icon">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMzUuMzc2MzElIiB4Mj0iOTYuMDQ2JSIgeTE9IjEuNTM4NDc4JSIgeTI9IjY1LjI2NDQ2OCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwZmZiNiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwZGNmZiIvPjwvbGluZWFyR3JhZGllbnQ+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAxIDMzKSI+PHJlY3QgaGVpZ2h0PSIzMyIgb3BhY2l0eT0iLjYiIHJ4PSIxNi41IiBzdHJva2U9InVybCgjYSkiIHdpZHRoPSIzMyIgeD0iLS41IiB5PSItLjUiLz48cGF0aCBkPSJtMTguMTQwMDQ3NSAxOS42MzI0MDM0LTIuNjg5MDc1Ni0yLjY4NTk1MDljLS4yMDE2ODA3LS4yMDE0NDYzLS42MDUwNDItLjA2NzE0ODgtLjYwNTA0Mi4yNjg1OTUxdi42NzE0ODc3YzAgLjQwMjg5MjctLjI2ODkwNzYuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0xLjM0NDUzNzhjLS40MDMzNjE0IDAtLjY3MjI2OS0uMjY4NTk1MS0uNjcyMjY5LS42NzE0ODc4di01LjM3MTkwMThjMC0uNDAyODkyNy4yNjg5MDc2LS42NzE0ODc3LjY3MjI2OS0uNjcxNDg3N2g1LjM3ODE1MTJjLjQwMzM2MTQgMCAuNjcyMjY4OS4yNjg1OTUuNjcyMjY4OS42NzE0ODc3djEuMzQyOTc1NGMwIC40MDI4OTI3LS4yNjg5MDc1LjY3MTQ4NzgtLjY3MjI2ODkuNjcxNDg3OGgtLjY3MjI2ODljLS4yNjg5MDc2IDAtLjQ3MDU4ODIuMzM1NzQzOC0uMjY4OTA3Ni42MDQzMzg5bDIuNjg5MDc1NyAyLjY4NTk1MWMuMjY4OTA3NS4yNjg1OTUxLjI2ODkwNzUuNjcxNDg3NyAwIC45NDAwODI4bC0uOTQxMTc2NS45NDAwODI4Yy0uMjAxNjgwNy4yMDE0NDYzLS42MDUwNDIuMjAxNDQ2My0uODczOTQ5Ni0uMDY3MTQ4OHoiIGZpbGw9InVybCgjYSkiIHRyYW5zZm9ybT0ibWF0cml4KC43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAuNzA3MTA2NzggMTUuOTM1MDI5IC02Ljc4NDI3MSkiLz48L2c+PC9zdmc+"
+                                            width="32px" style="margin-bottom: 0px;" class="hide_icon">
+                                    </div>
                                     <div class="col-10">
                                         <p class="faq_qTitle">What's the usage value of the token?</p>
                                         <div id="q3" class="collapse" data-parent="#faqAccordion">
@@ -549,12 +618,12 @@
                             <div class="question_box wow fadeInLeft ">
                                 <div class="row">
                                     <div class="col-2 questioncollapse" data-toggle="collapse" data-target="#q5"
-                                    aria-expanded="false">
-                                    <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii4zMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+PHJlY3QgaGVpZ2h0PSIzMyIgcng9IjE2LjUiIHN0cm9rZT0iI2FlYWVhZSIgd2lkdGg9IjMzIiB4PSItLjUiIHk9Ii0uNSIvPjxwYXRoIGQ9Im0xOC4xNDAwNDc1IDE5LjYzMjQwMzQtMi42ODkwNzU2LTIuNjg1OTUwOWMtLjIwMTY4MDctLjIwMTQ0NjMtLjYwNTA0Mi0uMDY3MTQ4OC0uNjA1MDQyLjI2ODU5NTF2LjY3MTQ4NzdjMCAuNDAyODkyNy0uMjY4OTA3Ni42NzE0ODc4LS42NzIyNjg5LjY3MTQ4NzhoLTEuMzQ0NTM3OGMtLjQwMzM2MTQgMC0uNjcyMjY5LS4yNjg1OTUxLS42NzIyNjktLjY3MTQ4Nzh2LTUuMzcxOTAxOGMwLS40MDI4OTI3LjI2ODkwNzYtLjY3MTQ4NzcuNjcyMjY5LS42NzE0ODc3aDUuMzc4MTUxMmMuNDAzMzYxNCAwIC42NzIyNjg5LjI2ODU5NS42NzIyNjg5LjY3MTQ4Nzd2MS4zNDI5NzU0YzAgLjQwMjg5MjctLjI2ODkwNzUuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0uNjcyMjY4OWMtLjI2ODkwNzYgMC0uNDcwNTg4Mi4zMzU3NDM4LS4yNjg5MDc2LjYwNDMzODlsMi42ODkwNzU3IDIuNjg1OTUxYy4yNjg5MDc1LjI2ODU5NTEuMjY4OTA3NS42NzE0ODc3IDAgLjk0MDA4MjhsLS45NDExNzY1Ljk0MDA4MjhjLS4yMDE2ODA3LjIwMTQ0NjMtLjYwNTA0Mi4yMDE0NDYzLS44NzM5NDk2LS4wNjcxNDg4eiIgZmlsbD0iI2FlYWVhZSIgdHJhbnNmb3JtPSJtYXRyaXgoLjcwNzEwNjc4IC43MDcxMDY3OCAtLjcwNzEwNjc4IC43MDcxMDY3OCAxNS45MzUwMjkgLTYuNzg0MjcxKSIvPjwvZz48L3N2Zz4="
-                                        width="32px" style="margin-bottom: 0px;" class="show_icon">
-                                    <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMzUuMzc2MzElIiB4Mj0iOTYuMDQ2JSIgeTE9IjEuNTM4NDc4JSIgeTI9IjY1LjI2NDQ2OCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwZmZiNiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwZGNmZiIvPjwvbGluZWFyR3JhZGllbnQ+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAxIDMzKSI+PHJlY3QgaGVpZ2h0PSIzMyIgb3BhY2l0eT0iLjYiIHJ4PSIxNi41IiBzdHJva2U9InVybCgjYSkiIHdpZHRoPSIzMyIgeD0iLS41IiB5PSItLjUiLz48cGF0aCBkPSJtMTguMTQwMDQ3NSAxOS42MzI0MDM0LTIuNjg5MDc1Ni0yLjY4NTk1MDljLS4yMDE2ODA3LS4yMDE0NDYzLS42MDUwNDItLjA2NzE0ODgtLjYwNTA0Mi4yNjg1OTUxdi42NzE0ODc3YzAgLjQwMjg5MjctLjI2ODkwNzYuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0xLjM0NDUzNzhjLS40MDMzNjE0IDAtLjY3MjI2OS0uMjY4NTk1MS0uNjcyMjY5LS42NzE0ODc4di01LjM3MTkwMThjMC0uNDAyODkyNy4yNjg5MDc2LS42NzE0ODc3LjY3MjI2OS0uNjcxNDg3N2g1LjM3ODE1MTJjLjQwMzM2MTQgMCAuNjcyMjY4OS4yNjg1OTUuNjcyMjY4OS42NzE0ODc3djEuMzQyOTc1NGMwIC40MDI4OTI3LS4yNjg5MDc1LjY3MTQ4NzgtLjY3MjI2ODkuNjcxNDg3OGgtLjY3MjI2ODljLS4yNjg5MDc2IDAtLjQ3MDU4ODIuMzM1NzQzOC0uMjY4OTA3Ni42MDQzMzg5bDIuNjg5MDc1NyAyLjY4NTk1MWMuMjY4OTA3NS4yNjg1OTUxLjI2ODkwNzUuNjcxNDg3NyAwIC45NDAwODI4bC0uOTQxMTc2NS45NDAwODI4Yy0uMjAxNjgwNy4yMDE0NDYzLS42MDUwNDIuMjAxNDQ2My0uODczOTQ5Ni0uMDY3MTQ4OHoiIGZpbGw9InVybCgjYSkiIHRyYW5zZm9ybT0ibWF0cml4KC43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAuNzA3MTA2NzggMTUuOTM1MDI5IC02Ljc4NDI3MSkiLz48L2c+PC9zdmc+"
-                                        width="32px" style="margin-bottom: 0px;" class="hide_icon">
-                                </div>
+                                        aria-expanded="false">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii4zMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+PHJlY3QgaGVpZ2h0PSIzMyIgcng9IjE2LjUiIHN0cm9rZT0iI2FlYWVhZSIgd2lkdGg9IjMzIiB4PSItLjUiIHk9Ii0uNSIvPjxwYXRoIGQ9Im0xOC4xNDAwNDc1IDE5LjYzMjQwMzQtMi42ODkwNzU2LTIuNjg1OTUwOWMtLjIwMTY4MDctLjIwMTQ0NjMtLjYwNTA0Mi0uMDY3MTQ4OC0uNjA1MDQyLjI2ODU5NTF2LjY3MTQ4NzdjMCAuNDAyODkyNy0uMjY4OTA3Ni42NzE0ODc4LS42NzIyNjg5LjY3MTQ4NzhoLTEuMzQ0NTM3OGMtLjQwMzM2MTQgMC0uNjcyMjY5LS4yNjg1OTUxLS42NzIyNjktLjY3MTQ4Nzh2LTUuMzcxOTAxOGMwLS40MDI4OTI3LjI2ODkwNzYtLjY3MTQ4NzcuNjcyMjY5LS42NzE0ODc3aDUuMzc4MTUxMmMuNDAzMzYxNCAwIC42NzIyNjg5LjI2ODU5NS42NzIyNjg5LjY3MTQ4Nzd2MS4zNDI5NzU0YzAgLjQwMjg5MjctLjI2ODkwNzUuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0uNjcyMjY4OWMtLjI2ODkwNzYgMC0uNDcwNTg4Mi4zMzU3NDM4LS4yNjg5MDc2LjYwNDMzODlsMi42ODkwNzU3IDIuNjg1OTUxYy4yNjg5MDc1LjI2ODU5NTEuMjY4OTA3NS42NzE0ODc3IDAgLjk0MDA4MjhsLS45NDExNzY1Ljk0MDA4MjhjLS4yMDE2ODA3LjIwMTQ0NjMtLjYwNTA0Mi4yMDE0NDYzLS44NzM5NDk2LS4wNjcxNDg4eiIgZmlsbD0iI2FlYWVhZSIgdHJhbnNmb3JtPSJtYXRyaXgoLjcwNzEwNjc4IC43MDcxMDY3OCAtLjcwNzEwNjc4IC43MDcxMDY3OCAxNS45MzUwMjkgLTYuNzg0MjcxKSIvPjwvZz48L3N2Zz4="
+                                            width="32px" style="margin-bottom: 0px;" class="show_icon">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMzQgMzQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMzUuMzc2MzElIiB4Mj0iOTYuMDQ2JSIgeTE9IjEuNTM4NDc4JSIgeTI9IjY1LjI2NDQ2OCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwZmZiNiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwZGNmZiIvPjwvbGluZWFyR3JhZGllbnQ+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAxIDMzKSI+PHJlY3QgaGVpZ2h0PSIzMyIgb3BhY2l0eT0iLjYiIHJ4PSIxNi41IiBzdHJva2U9InVybCgjYSkiIHdpZHRoPSIzMyIgeD0iLS41IiB5PSItLjUiLz48cGF0aCBkPSJtMTguMTQwMDQ3NSAxOS42MzI0MDM0LTIuNjg5MDc1Ni0yLjY4NTk1MDljLS4yMDE2ODA3LS4yMDE0NDYzLS42MDUwNDItLjA2NzE0ODgtLjYwNTA0Mi4yNjg1OTUxdi42NzE0ODc3YzAgLjQwMjg5MjctLjI2ODkwNzYuNjcxNDg3OC0uNjcyMjY4OS42NzE0ODc4aC0xLjM0NDUzNzhjLS40MDMzNjE0IDAtLjY3MjI2OS0uMjY4NTk1MS0uNjcyMjY5LS42NzE0ODc4di01LjM3MTkwMThjMC0uNDAyODkyNy4yNjg5MDc2LS42NzE0ODc3LjY3MjI2OS0uNjcxNDg3N2g1LjM3ODE1MTJjLjQwMzM2MTQgMCAuNjcyMjY4OS4yNjg1OTUuNjcyMjY4OS42NzE0ODc3djEuMzQyOTc1NGMwIC40MDI4OTI3LS4yNjg5MDc1LjY3MTQ4NzgtLjY3MjI2ODkuNjcxNDg3OGgtLjY3MjI2ODljLS4yNjg5MDc2IDAtLjQ3MDU4ODIuMzM1NzQzOC0uMjY4OTA3Ni42MDQzMzg5bDIuNjg5MDc1NyAyLjY4NTk1MWMuMjY4OTA3NS4yNjg1OTUxLjI2ODkwNzUuNjcxNDg3NyAwIC45NDAwODI4bC0uOTQxMTc2NS45NDAwODI4Yy0uMjAxNjgwNy4yMDE0NDYzLS42MDUwNDIuMjAxNDQ2My0uODczOTQ5Ni0uMDY3MTQ4OHoiIGZpbGw9InVybCgjYSkiIHRyYW5zZm9ybT0ibWF0cml4KC43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAuNzA3MTA2NzggMTUuOTM1MDI5IC02Ljc4NDI3MSkiLz48L2c+PC9zdmc+"
+                                            width="32px" style="margin-bottom: 0px;" class="hide_icon">
+                                    </div>
                                     <div class="col-10">
                                         <p class="faq_qTitle">Will supply be reduced?</p>
                                         <div id="q5" class="collapse" data-parent="#faqAccordion">
@@ -575,8 +644,8 @@
                                 Questions</h1>
 
                         </div>
-                        <img class="FAQ__NoMobileImage-jvOzgU jVtszR wow bounceInLeft" src="assets/images/faq-image.2939297c.png"
-                            width="100%" style="margin-top: 100px;">
+                        <img class="FAQ__NoMobileImage-jvOzgU jVtszR wow bounceInLeft"
+                            src="assets/images/faq-image.2939297c.png" width="100%" style="margin-top: 100px;">
                     </div>
                 </div>
             </div>
@@ -678,10 +747,11 @@
                             all of us.</p>
                     </div>
                     <div class="col-10 offset-1 col-md-3 offset-md-1">
-                        <h3 class="footer_title wow fadeInDown">Join the Community</h3><span><a
-                                class="SocialIcons__SocialIconWrapper-bxXgIs akLfd"
-                                href="https://twitter.com/cotrader_com" target="_blank"><svg
-                                    class="svg-inline--fa fa-twitter fa-w-16 SocialIcons__SocialIcon-dCBpyG bdXSIT"
+                        <h3 class="footer_title wow fadeInDown">Join the Community</h3>
+                        <span>
+                            <a class="SocialIcons__SocialIconWrapper-bxXgIs akLfd"
+                                href="https://twitter.com/cotrader_com" target="_blank">
+                                <svg class="svg-inline--fa fa-twitter fa-w-16 SocialIcons__SocialIcon-dCBpyG bdXSIT"
                                     aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
                                     <path fill="currentColor"
@@ -769,7 +839,8 @@
                                     </path>
                                 </svg>
                             </a></span><a href="mailto:team@cotrader.com">
-                            <p class="FooterBody-eCIPCO fvKepn wow fadeInUp" style="margin-top: 15px;">team@cotrader.com</p>
+                            <p class="FooterBody-eCIPCO fvKepn wow fadeInUp" style="margin-top: 15px;">team@cotrader.com
+                            </p>
                         </a>
                     </div>
 
@@ -800,6 +871,79 @@
         <!-- footer ends -->
 
 
+        <!-- get notified section starts -->
+        <section class="notified_section">
+            <button class="btn btn_getNotified" data-toggle="modal" data-target="#notifyModel">Get Notified</button>
+
+            <!-- The Modal -->
+            <div class="modal fade" id="notifyModel">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        
+                        <!-- Modal Header -->
+                        <div class="modal-header border-0">
+                            <h4 class="modal-title">Get Notified</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body ">
+
+                            <h4 >Follow Us</h4>
+
+                            <p> <a class="SocialIcons__SocialIconWrapper-bxXgIs akLfd"
+                                    href="https://twitter.com/cotrader_com" target="_blank">
+                                    Twitter
+
+                                    <svg class="svg-inline--fa fa-twitter fa-w-16 SocialIcons__SocialIcon-dCBpyG bdXSIT"
+                                        aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </p>
+
+                            <p> <a class="SocialIcons__SocialIconWrapper-bxXgIs akLfd" href="https://t.me/CoTraders"
+                                    target="_blank">
+                                    Telegram Channel
+                                    <svg class="svg-inline--fa fa-telegram-plane fa-w-14 SocialIcons__SocialIcon-dCBpyG bdXSIT"
+                                        aria-hidden="true" data-prefix="fab" data-icon="telegram-plane" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </p>
+
+                            <p> <a class="SocialIcons__SocialIconWrapper-bxXgIs akLfd" href="https://t.me/CoTrader"
+                                target="_blank">
+                                Telegram Group
+                                <svg
+                                    class="svg-inline--fa fa-telegram-plane fa-w-14 SocialIcons__SocialIcon-dCBpyG bdXSIT"
+                                    aria-hidden="true" data-prefix="fab" data-icon="telegram-plane" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                        d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </p>
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- get notified section ends -->
+
+
 
     </div>
 
@@ -826,13 +970,11 @@
 
 
     <script>
-        wow = new WOW(
-  {
-    animateClass: 'animated',
-    offset: 100
-  }
-);
-         wow.init();
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100
+        });
+        wow.init();
     </script>
 
 

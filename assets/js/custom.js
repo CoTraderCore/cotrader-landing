@@ -28,9 +28,14 @@ var swiper = new Swiper('.swiper-container', {
     spaceBetween: 30,
     loop: true,
     centeredSlides: true,
+    clickable: true,
+    // Navigation arrows
+  nextButton: '.swiper-button-next',
+  prevButton: '.swiper-button-prev',
+    
     pagination: {
       el: '.swiper-pagination',
-      clickable: false,
+      clickable: true,
     },
     breakpoints: {
         // when window width is >= 320px

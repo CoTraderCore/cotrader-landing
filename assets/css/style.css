@@ -718,6 +718,74 @@ svg:not(:root).svg-inline--fa {
   line-height: 1.5;
 }
 
+.notified_section .btn_getNotified {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(43deg, #00cff8 0%, #6476ff 100%);
+  color: #fff;
+  font-weight: 600;
+}
+
+.notified_section #notifyModel .modal-content {
+  background-image: url(../images/light_logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #1d2435;
+  -webkit-box-shadow: #000 0px 6px 12px 0px;
+          box-shadow: #000 0px 6px 12px 0px;
+  color: #fff;
+}
+
+.notified_section #notifyModel .modal-content .close {
+  color: white;
+}
+
+.notified_section #notifyModel .modal-content .modal-header {
+  padding-bottom: 0px;
+}
+
+.notified_section #notifyModel .modal-content .modal-header h4.modal-title {
+  color: #00ffb6;
+}
+
+.notified_section #notifyModel .modal-content .modal-body {
+  padding-top: 0px;
+}
+
+.notified_section #notifyModel .modal-content .modal-body h4 {
+  color: #5d39d4;
+  text-align: center;
+  font-weight: bold;
+}
+
+.notified_section #notifyModel .modal-content .modal-body p {
+  opacity: 1;
+}
+
+.notified_section #notifyModel .modal-content .modal-body p a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
+  color: #fff;
+}
+
+.notified_section #notifyModel .modal-content .modal-body p a svg {
+  margin-right: 0px !important;
+}
+
+.flip-clock-small-wrapper .flip-clock-divider .flip-clock-label, body .flip-clock-small-wrapper ul li a div div.inn {
+  color: white !important;
+}
+
 /*// Large devices (desktops, less than 1200px)*/
 /*// Medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) {
@@ -783,6 +851,9 @@ svg:not(:root).svg-inline--fa {
   }
   .expansion_section .expansion_Mwrapper .milestone_list_wrapper {
     margin: 40px 0px;
+  }
+  #hero_section {
+    padding: 1rem 0rem 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

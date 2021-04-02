@@ -839,6 +839,82 @@ svg:not(:root).svg-inline--fa {
 
 }
 
+// get notified section css
+.notified_section{
+
+  .btn_getNotified{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(
+      43deg
+      , #00cff8 0%, #6476ff 100%);
+      color:#fff;
+      font-weight: 600;
+  }
+
+ #notifyModel{
+   .modal-content{
+    background-image: url(../images/light_logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:  #1d2435;
+    box-shadow: #000 0px 6px 12px 0px;
+    color:#fff;
+
+    .close {
+      color: white;
+      // position: absolute;
+      // float: unset;
+      // right: 20px;
+      // top: 5px;
+    }
+
+    .modal-header{
+      padding-bottom: 0px;
+      h4.modal-title{
+        color: #00ffb6;
+      }
+    }
+    .modal-body{
+      padding-top: 0px;
+      h4{
+        color: #5d39d4;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      p {
+        opacity: 1;
+
+      a{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 17px;
+        color: #fff;
+        
+
+        svg{
+          margin-right: 0px !important;
+        }
+      }
+      }
+    }
+
+
+   }
+ }
+
+
+}
+
+
+// flip css
+.flip-clock-small-wrapper .flip-clock-divider .flip-clock-label, body .flip-clock-small-wrapper ul li a div div.inn {
+  color: white !important;
+}
 
 
 
@@ -921,6 +997,9 @@ svg:not(:root).svg-inline--fa {
 }
 .expansion_section .expansion_Mwrapper .milestone_list_wrapper {
   margin: 40px 0px;
+}
+#hero_section {
+  padding: 1rem 0rem 2rem;
 }
 
 }
