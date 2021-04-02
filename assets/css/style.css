@@ -524,7 +524,7 @@ svg:not(:root).svg-inline--fa {
   border-radius: 19.19px;
   -webkit-box-shadow: #323b93 0px 6px 12px 0px;
           box-shadow: #323b93 0px 6px 12px 0px;
-  padding: 52px 36px;
+  padding: 52px 33px;
   z-index: 1;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
@@ -551,6 +551,10 @@ svg:not(:root).svg-inline--fa {
   position: absolute;
   left: -15px;
   top: -45px;
+}
+
+.expansion_section .expansion_Mwrapper .milestone_list_wrapper .milestone_box h3.msDate.msDateQ3:after {
+  content: "Q3";
 }
 
 .expansion_section .expansion_Mwrapper .milestone_list_wrapper .milestone_box p {
