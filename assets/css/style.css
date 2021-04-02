@@ -222,6 +222,7 @@ input[type="search"]::-webkit-search-decoration {
 #hero_section .hero_content {
   max-width: 480px;
   margin-left: auto;
+  padding-bottom: 4rem;
 }
 
 #hero_section .hero_content h2 {
@@ -725,6 +726,7 @@ svg:not(:root).svg-inline--fa {
   background: linear-gradient(43deg, #00cff8 0%, #6476ff 100%);
   color: #fff;
   font-weight: 600;
+  border-radius: 13px;
 }
 
 .notified_section #notifyModel .modal-content {
@@ -853,7 +855,10 @@ svg:not(:root).svg-inline--fa {
     margin: 40px 0px;
   }
   #hero_section {
-    padding: 1rem 0rem 2rem;
+    padding: 0rem 0rem 2rem;
+  }
+  #hero_section .hero_content {
+    padding-bottom: 0rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
