@@ -29,19 +29,18 @@ var swiper = new Swiper('.swiper-container', {
     loop: true,
     centeredSlides: true,
     clickable: true,
+    // direction: 'vertical',
     // Navigation arrows
-  nextButton: '.swiper-button-next',
-  prevButton: '.swiper-button-prev',
-    
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
+    
     breakpoints: {
         // when window width is >= 320px
         320: {
-          slidesPerView: 1,
-          spaceBetween: 20
+          slidesPerView: 1.5,
+          spaceBetween: 5
         },
         700: {
           slidesPerView: 2,

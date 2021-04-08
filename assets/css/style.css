@@ -55,6 +55,15 @@ h2.subtitle {
   margin-bottom: 19px;
 }
 
+h3.title_3 {
+  font-weight: 600;
+  font-size: 36px;
+  color: white;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  padding-bottom: 19px;
+}
+
 p {
   font-weight: 400;
   opacity: 0.8;
@@ -733,10 +742,12 @@ svg:not(:root).svg-inline--fa {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: linear-gradient(43deg, #00cff8 0%, #6476ff 100%);
+  background: red;
   color: #fff;
   font-weight: 600;
   border-radius: 13px;
+  -webkit-box-shadow: #000 0px 6px 12px 0px;
+          box-shadow: #000 0px 6px 12px 0px;
 }
 
 .notified_section #notifyModel .modal-content {
@@ -798,6 +809,28 @@ svg:not(:root).svg-inline--fa {
   color: white !important;
 }
 
+.swip_btn .fas {
+  color: #171a2a;
+  color: #323b93;
+  font-size: 35px;
+}
+
+.swiper-button-prev {
+  left: 4px !important;
+}
+
+.swiper-button-next {
+  right: 4px !important;
+}
+
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+  content: unset !important;
+}
+
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+  content: unset !important;
+}
+
 /*// Large devices (desktops, less than 1200px)*/
 /*// Medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) {
@@ -852,7 +885,6 @@ svg:not(:root).svg-inline--fa {
 @media (max-width: 575.98px) {
   .section_my {
     padding-top: 100px;
-    padding-bottom: 100px;
   }
   .mx_xs_auto {
     margin-left: auto;
@@ -862,13 +894,43 @@ svg:not(:root).svg-inline--fa {
     margin-bottom: 2rem;
   }
   .expansion_section .expansion_Mwrapper .milestone_list_wrapper {
-    margin: 40px 0px;
+    margin: 20px 0px 0px;
   }
   #hero_section {
     padding: 0rem 0rem 2rem;
+    margin-top: 80px;
   }
   #hero_section .hero_content {
     padding-bottom: 0rem;
+  }
+  .expansion_section .expansion_Mwrapper .milestone_list_wrapper .milestone_box {
+    padding: 30px 15px;
+  }
+  .expansion_section .expansion_Mwrapper .milestone_list_wrapper .milestone_box p {
+    font-size: 14px;
+    padding-top: 40px;
+  }
+  .expansion_section .expansion_Mwrapper .milestone_list_wrapper .milestone_box h3.msDate {
+    font-size: 31px;
+  }
+  .expansion_section .expansion_Mwrapper .milestone_list_wrapper .milestone_box h3.msDate:after {
+    font-size: 100px;
+  }
+  .expansion_section .expansion_Mwrapper .roadmap_text {
+    margin-top: 0px;
+  }
+  .swiper-button-prev {
+    display: none !important;
+  }
+  .swiper-button-next {
+    display: none !important;
+  }
+  h3.title_3 {
+    font-size: 30px;
+    line-height: 1;
+  }
+  #hero_section .hero_content h2 {
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
