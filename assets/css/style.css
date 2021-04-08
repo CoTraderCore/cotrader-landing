@@ -736,13 +736,15 @@ svg:not(:root).svg-inline--fa {
   color: #fff;
   font-weight: 600;
   border-radius: 13px;
+  -webkit-box-shadow: #000 0px 6px 12px 0px;
+          box-shadow: #000 0px 6px 12px 0px;
 }
 
 .notified_section .btn_getNotified {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: red;
+  background: linear-gradient(43deg, #0eb2cf 0%, #8441db 100%);
   color: #fff;
   font-weight: 600;
   border-radius: 13px;
