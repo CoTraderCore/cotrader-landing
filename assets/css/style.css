@@ -728,10 +728,40 @@ svg:not(:root).svg-inline--fa {
   line-height: 1.5;
 }
 
+
+
+
+.notified_section .btn_openETH {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: linear-gradient(43deg, #0eb2cf 0%, #8441db 100%);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 13px;
+  -webkit-box-shadow: #000 0px 6px 12px 0px;
+          box-shadow: #000 0px 6px 12px 0px;
+}
+.notified_section .btn_openBSC {
+  position: fixed;
+  /* bottom: 20px; */
+  left: 20px;
+  background: linear-gradient(43deg, #17c250 0%, #17c250 100%);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 13px;
+  -webkit-box-shadow: #000 0px 6px 12px 0px;
+          box-shadow: #000 0px 6px 12px 0px;
+}
+
+
+
+
+
 .notified_section .btn_openBUY {
   position: fixed;
   bottom: 20px;
-  right: 150px;
+  right: 20px;
   background: linear-gradient(43deg, #17c250 0%, #17c250 100%);
   color: #fff;
   font-weight: 600;
@@ -751,9 +781,6 @@ svg:not(:root).svg-inline--fa {
   -webkit-box-shadow: #000 0px 6px 12px 0px;
           box-shadow: #000 0px 6px 12px 0px;
 }
-
-
-
 
 .notified_section #openBuyModel .modal-content {
   background-image: url(../images/light_logo.png);
@@ -869,6 +896,12 @@ svg:not(:root).svg-inline--fa {
 .notified_section #notifyModel .modal-content .modal-body p a svg {
   margin-right: 0px !important;
 }
+
+
+
+
+
+
 
 .flip-clock-small-wrapper .flip-clock-divider .flip-clock-label, body .flip-clock-small-wrapper ul li a div div.inn {
   color: white !important;
