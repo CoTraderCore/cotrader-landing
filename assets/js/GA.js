@@ -1,5 +1,5 @@
 $(document).ready(function ($) {
-    var GOOGLE_ANALYTICS_USER_TRACKER_PROJECT_TOKEN = 'G-CYCNE6RGB2';
+    var GOOGLE_ANALYTICS_USER_TRACKER_PROJECT_TOKEN = 'G-JVV35V4GTP';
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
