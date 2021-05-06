@@ -9,6 +9,7 @@ $(document).ready(function ($) {
     // gtag('event', 'screen_view', {});
 
     $('#outer-wrapper a').click(function () {
+        debugger
         // event.preventDefault();
         var getCickedButtonValue = $(this).attr('value');
         // console.log("Google analytics User Clicked on ", getCickedButtonValue);
@@ -23,6 +24,7 @@ $(document).ready(function ($) {
 
 
     $('#exampleModal a').click(function () {
+        debugger
         // event.preventDefault();
         var getCickedButtonValue = $(this).attr('value');
         // console.log("Google analytics User Clicked on ", getCickedButtonValue);
