@@ -18,7 +18,7 @@ $navbara.click(function(e){
   $('html, body').animate({
     scrollTop: $($(this).attr('href')).offset().top
 },1000);
-  hash($(this).attr('href'));
+  // hash($(this).attr('href'));
 });
 
 
