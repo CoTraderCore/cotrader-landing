@@ -828,6 +828,7 @@ svg:not(:root).svg-inline--fa {
   -webkit-box-shadow: rgb(197, 56, 56) 0px 6px 12px 0px;
           box-shadow: rgb(59, 197, 174) 0px 6px 12px 0px;
   color: #fff;
+  z-index: 1000;
 }
 
 .notified_section #openBuyModel .modal-content {
@@ -839,6 +840,7 @@ svg:not(:root).svg-inline--fa {
   -webkit-box-shadow: rgb(197, 56, 56) 0px 6px 12px 0px;
           box-shadow: rgb(59, 197, 174) 0px 6px 12px 0px;
   color: #fff;
+  z-index: 1000;
 }
 
 .notified_section #openBuyModel .modal-content .close {
