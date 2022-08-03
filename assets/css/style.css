@@ -734,7 +734,7 @@ svg:not(:root).svg-inline--fa {
 .notified_section .btn_openETH {
   position: fixed;
   bottom: 20px;
-  left: 20px;
+  right: 20px;
   background: linear-gradient(43deg, #0eb2cf 0%, #8441db 100%);
   color: #fff;
   font-weight: 600;
@@ -745,7 +745,7 @@ svg:not(:root).svg-inline--fa {
 .notified_section .btn_openBSC {
   position: fixed;
   /* bottom: 20px; */
-  left: 20px;
+  right: 20px;
   background: linear-gradient(43deg, #0eb2cf 0%, #8441db 100%);
   /* background: linear-gradient(43deg, #17c250 0%, #17c250 100%); */
   color: #fff;
